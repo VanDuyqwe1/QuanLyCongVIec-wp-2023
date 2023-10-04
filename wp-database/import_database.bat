@@ -1,1 +1,1 @@
-mysqldump -uroot -p wordpress_v602 > wordpress_v602.sql
+mysqldump -uroot -p quanLyCongViec-wp-2023 > quanLyCongViec-wp-2023.sql
