@@ -30,7 +30,7 @@ class WP_Job_Manager_Usage_Tracking_Data {
 			$categories = wp_count_terms( 'job_listing_category', [ 'hide_empty' => false ] );
 		}
 
-		return [
+		$usage_data = [
 			'employers'                   => self::get_employer_count(),
 			'job_categories'              => $categories,
 			'job_categories_desc'         => self::get_job_category_has_description_count(),
@@ -60,9 +60,19 @@ class WP_Job_Manager_Usage_Tracking_Data {
 			'jobs_part_time'              => self::get_jobs_by_type_count( 'part-time' ),
 			'jobs_temp'                   => self::get_jobs_by_type_count( 'temporary' ),
 			'jobs_by_guests'              => self::get_jobs_by_guests(),
-			'official_extensions'         => self::get_official_extensions_count(),
-			'licensed_extensions'         => self::get_licensed_extensions_count(),
 		];
+
+		$all_extenstions     = self::get_official_extensions( false );
+		$licensed_extensions = self::get_official_extensions( true );
+
+		$usage_data['official_extensions'] = count( $all_extenstions );
+		$usage_data['licensed_extensions'] = count( $licensed_extensions );
+
+		foreach ( array_keys( $all_extenstions ) as $installed_plugin ) {
+			$usage_data[ $installed_plugin ] = isset( $licensed_extensions[ $installed_plugin ] ) ? 'licensed' : 'unlicensed';
+		}
+
+		return $usage_data;
 	}
 
 	/**
@@ -181,7 +191,7 @@ class WP_Job_Manager_Usage_Tracking_Data {
 				'post_type'   => 'job_listing',
 				'post_status' => [ 'expired', 'publish' ],
 				'fields'      => 'ids',
-				'tax_query'   => [
+				'tax_query'   => [ // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_tax_query -- Used in production with no issues.
 					[
 						'field'    => 'slug',
 						'taxonomy' => 'job_listing_type',
@@ -207,7 +217,7 @@ class WP_Job_Manager_Usage_Tracking_Data {
 				'post_type'   => 'job_listing',
 				'post_status' => [ 'expired', 'publish' ],
 				'fields'      => 'ids',
-				'meta_query'  => [
+				'meta_query'  => [ // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query -- Used in production with no issues.
 					[
 						'key'     => '_thumbnail_id',
 						'compare' => 'EXISTS',
@@ -232,7 +242,7 @@ class WP_Job_Manager_Usage_Tracking_Data {
 				'post_type'   => 'job_listing',
 				'post_status' => [ 'expired', 'publish' ],
 				'fields'      => 'ids',
-				'tax_query'   => [
+				'tax_query'   => [ // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_tax_query -- Used in production with no issues.
 					[
 						'taxonomy' => 'job_listing_type',
 						'operator' => 'EXISTS',
@@ -257,7 +267,7 @@ class WP_Job_Manager_Usage_Tracking_Data {
 				'post_type'   => 'job_listing',
 				'post_status' => [ 'publish', 'expired' ],
 				'fields'      => 'ids',
-				'meta_query'  => [
+				'meta_query'  => [ // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query -- Used in production with no issues.
 					[
 						'key'     => $meta_key,
 						'value'   => '[^[:space:]]',
@@ -284,7 +294,7 @@ class WP_Job_Manager_Usage_Tracking_Data {
 				'post_type'   => 'job_listing',
 				'post_status' => [ 'publish', 'expired' ],
 				'fields'      => 'ids',
-				'meta_query'  => [
+				'meta_query'  => [ // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query -- Used in production with no issues.
 					[
 						'key'   => $meta_key,
 						'value' => '1',
@@ -327,11 +337,11 @@ class WP_Job_Manager_Usage_Tracking_Data {
 		}
 
 		$helper         = WP_Job_Manager_Helper::instance();
-		$active_plugins = $helper->get_installed_plugins( true );
+		$active_plugins = $helper->get_installed_plugins( true, false );
 
 		if ( $licensed_only ) {
 			foreach ( $active_plugins as $plugin_slug => $data ) {
-				if ( ! $helper->has_plugin_licence( $plugin_slug ) ) {
+				if ( ! $helper->has_plugin_license( $plugin_slug ) ) {
 					unset( $active_plugins[ $plugin_slug ] );
 				}
 			}
@@ -345,13 +355,6 @@ class WP_Job_Manager_Usage_Tracking_Data {
 	 */
 	private static function get_official_extensions_count() {
 		return count( self::get_official_extensions( false ) );
-	}
-
-	/**
-	 * Gets the count of all official extensions that are installed, activated, and have active license.
-	 */
-	private static function get_licensed_extensions_count() {
-		return count( self::get_official_extensions( true ) );
 	}
 
 	/**
