@@ -1,1 +1,0 @@
-mysqldump -uroot -p nhomj-wp-2023 > nhomj-wp-2023.sql
