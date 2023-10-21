@@ -1,6 +1,5 @@
 # Ignore core WordPress files
-wp-admin/
-wp-includes/
+
 
 # Ignore specific plugins and themes (điều chỉnh theo nhu cầu)
 wp-content/plugins/akismet/
