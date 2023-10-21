@@ -2141,9 +2141,9 @@ input[type=reset] {
 	color: #d1e4dd;
 }
 
-button:not(:hover):not(:active):not(.has-text-color) {
+/* button:not(:hover):not(:active):not(.has-text-color) {
 	color: #d1e4dd;
-}
+} */
 
 input[type=submit]:not(:hover):not(:active):not(.has-text-color) {
 	color: #d1e4dd;
@@ -2225,9 +2225,9 @@ input[type=reset]:not(:hover):not(:active):not(.has-text-color) {
 	background-color: #28303d;
 }
 
-button:not(:hover):not(:active):not(.has-background) {
+/* button:not(:hover):not(:active):not(.has-background) {
 	background-color: #28303d;
-}
+} */
 
 input[type=submit]:not(:hover):not(:active):not(.has-background) {
 	background-color: #28303d;
