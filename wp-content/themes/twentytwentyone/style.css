@@ -825,6 +825,7 @@ template {
 
 .site-footer > *,
 .widget-area > * {
+  color: var(--global--color-white);
   margin-top: calc(0.666 * var(--global--spacing-vertical));
   margin-bottom: calc(0.666 * var(--global--spacing-vertical));
 }
@@ -3316,9 +3317,14 @@ table.wp-calendar-table caption {
     justify-content: center;
   }
 }
+#colophon {
+  background-color: #007b5e;
+}
+
 .site-footer {
   padding-top: 0;
-  padding-bottom: calc(1.7 * var(--global--spacing-vertical));
+  padding-bottom: 1rem;
+  max-width: none;
 }
 .no-widgets .site-footer {
   margin-top: calc(6 * var(--global--spacing-vertical));
@@ -3331,11 +3337,10 @@ table.wp-calendar-table caption {
 
 .site-footer > .site-info {
   padding-top: var(--global--spacing-vertical);
-  color: var(--footer--color-text);
+  color: var(--global--color-white);
   font-family: var(--footer--font-family);
   font-size: var(--footer--font-size);
   line-height: var(--global--line-height-body);
-  border-top: 3px solid var(--global--color-border);
 }
 .site-footer > .site-info .site-name {
   text-transform: var(--branding--title--text-transform);
@@ -3363,10 +3368,10 @@ table.wp-calendar-table caption {
   }
 }
 .site-footer > .site-info a {
-  color: var(--footer--color-link);
+  color: var(--global--color-white);
 }
 .site-footer > .site-info a:link, .site-footer > .site-info a:visited, .site-footer > .site-info a:active {
-  color: var(--footer--color-link);
+  color: var(--global--color-white);
 }
 .site-footer > .site-info a:hover {
   color: var(--footer--color-link-hover);
@@ -4579,17 +4584,17 @@ h1.page-title {
 }
 
 .widget-area {
+  max-width: none;
   margin-top: calc(6 * var(--global--spacing-vertical));
-  padding-bottom: calc(var(--global--spacing-vertical) / 3);
   color: var(--footer--color-text);
   font-size: var(--footer--font-size);
   font-family: var(--footer--font-family);
+  background-color: #007b5e;
 }
 @media only screen and (min-width: 652px) {
   .widget-area {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: calc(2 * var(--global--spacing-horizontal));
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -4599,7 +4604,7 @@ h1.page-title {
 }
 @media only screen and (max-width: 481px) {
   .widget-area {
-    margin-top: calc(3 * var(--global--spacing-vertical));
+    /*margin-top: calc(3 * var(--global--spacing-vertical));*/
   }
 }
 .widget-area .wp-block-social-links.alignright {
@@ -4614,6 +4619,23 @@ h1.page-title {
   display: table;
   clear: both;
 }
+
+.widget_block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widget_block a {
+  color: white!important;
+  text-decoration: none!important;
+}
+
+.widget_block a:before {
+  content:"»";
+  margin:5px;
+  font-size: 1.5rem;
+}
+
 
 .widget h1,
 .widget h2,
