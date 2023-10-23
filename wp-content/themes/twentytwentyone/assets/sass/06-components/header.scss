@@ -2,28 +2,51 @@
 .site-header {
 	@extend %responsive-alignwide-width;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	flex-wrap: wrap;
 	row-gap: var(--global--spacing-vertical); // Add space in case the menu wraps below the site branding.
-	// background: greenyellow !important;
+	background: $gray-light;
+	border-radius: 5px;
 
 	.wp-custom-logo & {
 		align-items: center;
 	}
 
-	@include media(mobile) {
-		padding-top: calc(var(--global--spacing-vertical) / 0.75); // 40px
+	.d-column {
+		display: flex;
+		flex-direction: column;
+		text-decoration: none;
 	}
 
-	@include media(desktop) {
-		padding-top: calc(2.4 * var(--global--spacing-vertical)); // 60px
+	.ellipsis {
+		padding-left: 3rem;
+		padding-right: 3rem;
 	}
+
+	.search, .user-circle{
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+	// @include media(mobile) {
+	// 	padding-top: calc(var(--global--spacing-vertical) / 0.75); // 40px
+	// }
+
+	// @include media(desktop) {
+	// 	padding-top: calc(2.4 * var(--global--spacing-vertical)); // 60px
+	// }
 }
 
 // Site branding
 .site-branding {
 	color: var(--branding--color-text);
 	margin-right: 140px;
+
+	input,
+	button {
+		border: 1px solid #ccc;
+		;
+	}
 
 	&:last-child {
 		margin-right: 0;
@@ -33,7 +56,7 @@
 
 	@include media(mobile) {
 		margin-right: initial;
-		margin-top: 4px; // Align the baseline of the site title with the primary menu
+		// margin-top: 4px; // Align the baseline of the site title with the primary menu
 	}
 }
 
@@ -46,7 +69,7 @@
 	letter-spacing: normal;
 	text-transform: var(--branding--title--text-transform);
 	line-height: var(--global--line-height-heading);
-	margin-bottom: calc(var(--global--spacing-vertical) / 6);
+	// margin-bottom: calc(var(--global--spacing-vertical) / 6);
 
 	a {
 		color: currentColor;
@@ -78,7 +101,7 @@
 	line-height: 1.4;
 }
 
-.site-title > a {
+.site-title>a {
 	text-decoration-color: var(--global--color-secondary);
 }
 
@@ -87,7 +110,7 @@
 
 	margin: calc(var(--global--spacing-vertical) / 2) 0;
 
-	.site-header > & {
+	.site-header>& {
 		width: 100%;
 		padding-bottom: calc(var(--global--spacing-vertical) * 1.5);
 		border-bottom: 1px solid;
