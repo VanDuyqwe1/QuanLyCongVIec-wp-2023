@@ -4582,10 +4582,12 @@ h1.page-title {
 .comments-pagination .nav-links > * {
   font-size: var(--global--font-size-md);
 }
+.footer-widgets {
+  background-color: #007b5e;
+}
 
 .widget-area {
-  max-width: none;
-  margin-top: calc(6 * var(--global--spacing-vertical));
+  margin-top: calc(2 * var(--global--spacing-vertical));
   color: var(--footer--color-text);
   font-size: var(--footer--font-size);
   font-family: var(--footer--font-family);
@@ -4604,7 +4606,7 @@ h1.page-title {
 }
 @media only screen and (max-width: 481px) {
   .widget-area {
-    /*margin-top: calc(3 * var(--global--spacing-vertical));*/
+    margin-top: calc(3 * var(--global--spacing-vertical));
   }
 }
 .widget-area .wp-block-social-links.alignright {
@@ -4621,8 +4623,7 @@ h1.page-title {
 }
 
 .widget_block {
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 1rem;
 }
 
 .widget_block a {

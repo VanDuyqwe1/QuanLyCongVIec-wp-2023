@@ -8,12 +8,16 @@
  */
 
 if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-
-	<aside class="widget-area">
-		<?php dynamic_sidebar( 'sidebar-1' ); ?>
-	</aside><!-- .widget-area -->
-
-	<?php
+    <div class="footer-widgets">
+        <div class="container">
+            <div class="row">
+                <aside class="widget-area">
+					<?php dynamic_sidebar( 'sidebar-1' ); ?>
+                </aside><!-- .widget-area -->
+            </div>
+        </div>
+    </div>
+<?php
 endif;
 
 if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
