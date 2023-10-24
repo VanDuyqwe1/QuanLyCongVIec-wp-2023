@@ -1,41 +1,39 @@
-.widget-title{
-    color: red;
-  }
+
 /* CSS Test begin */
-.comment-box {
+.p-comment-box {
     margin-top: 30px !important;
 }
 /* CSS Test end */
 
-.comment-box img {
+.p-comment-box img {
     width: 50px;
     height: 50px;
 }
-.comment-box .media-left {
+.p-comment-box .p-media-left {
     padding-right: 10px;
     width: 65px;
 }
-.media-body{
+.p-media-body{
     padding-top: 10px;
 }
-.media-left{
+.p-media-left{
     padding-top: 10px;
 }
-.comment-box .media-body p {
+.p-comment-box .p-media-body p {
     border: 1px solid #ddd;
     padding: 10px;
 }
-.comment-box .media-body .media p {
+.p-comment-box .p-media-body .p-media p {
     margin-bottom: 0;
 }
-.comment-box .media-heading {
+.p-comment-box .p-media-heading {
     background-color: #f5f5f5;
     border: 1px solid #ddd;
     padding: 7px 10px;
     position: relative;
     margin-bottom: -1px;
 }
-.comment-box .media-heading:before {
+.p-comment-box .p-media-heading:before {
     content: "";
     width: 12px;
     height: 12px;
@@ -48,3 +46,6 @@
     top: 10px;
     left: -6px;
 }
+.widget-title{
+    color: red;
+  }
