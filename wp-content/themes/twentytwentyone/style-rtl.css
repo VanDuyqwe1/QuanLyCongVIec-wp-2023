@@ -92,14 +92,6 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
  * Measure..............The width of a line of text, in characters.
  */
 /* Categories 01 to 03 are the basics. */
-.hover-menu:hover {
-  background: #e7e7e7;
-}
-
-.bg-while {
-  background: #fff;
-}
-
 /* Variables */
 :root {
   /* Font Family */
@@ -167,15 +159,11 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --global--color-e7e7e7: #e7e7e7;
   --global--color-79aff5: #79aff5;
   --global--color-b2b2b2: #b2b2b2;
-  --global--color-primary: var(--global--color-dark-gray); /* Body text color, site title, footer text color. */
-  --global--color-secondary: var(--global--color-gray); /* Headings */
-  --global--color-primary-hover: var(--global--color-primary);
-  --global--color-background: var(--global--color-white); /* Mint, default body background */
   --global--color-428bca: #428bca;
   --global--color-primary: var(--global--color-dark-gray); /* Body text color, site title, footer text color. */
   --global--color-secondary: var(--global--color-gray); /* Headings */
   --global--color-primary-hover: var(--global--color-primary);
-  --global--color-background: var(--global--color-white-90); /* Mint, default body background */
+  --global--color-background: var(--global--color-white); /* Mint, default body background */
   --global--color-border: var(--global--color-primary); /* Used for borders (separators) */
   /* Spacing */
   --global--spacing-unit: 20px;
@@ -334,6 +322,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .bg-while {
   background: #fff;
 }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -4806,13 +4795,16 @@ h1.page-title {
 .home .widget-last-comment .wp-block-latest-comments__comment {
   margin: 0;
 }
-.home .widget-last-comment .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta {
+.home .widget-last-comment .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt {
   padding: 10px 15px;
   border-bottom: 1px solid var(--global--color-e7e7e7);
 }
-.home .widget-last-comment .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-link {
+.home .widget-last-comment .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt p {
   text-decoration: none;
   color: var(--global--color-79aff5);
+}
+.home .widget-last-comment .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta {
+  display: none;
 }
 
 /* Category 07 is for any utility classes that are not assigned to a specific component. */

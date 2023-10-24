@@ -18,13 +18,16 @@
 
         .wp-block-latest-comments__comment {
             margin: 0;
-            .wp-block-latest-comments__comment-meta{
+            .wp-block-latest-comments__comment-excerpt{
                 padding: 10px 15px;
                 border-bottom: 1px solid var(--global--color-e7e7e7);
-                .wp-block-latest-comments__comment-link {
+                p {
                     text-decoration: none;
                     color: var(--global--color-79aff5);
                 }
+            }
+            .wp-block-latest-comments__comment-meta{
+                display: none;
             }
 
         }
