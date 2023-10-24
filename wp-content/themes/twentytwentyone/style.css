@@ -335,6 +335,7 @@ html {
  */
 body {
   margin: 0;
+  background: url("../../../wp-admin/images/bg_pattern.png") repeat;
 }
 
 /**
@@ -3389,9 +3390,9 @@ table.wp-calendar-table caption {
 }
 
 .singular .entry-header {
-  border-bottom: 3px solid var(--global--color-border);
-  padding-bottom: calc(2 * var(--global--spacing-vertical));
-  margin-bottom: calc(3 * var(--global--spacing-vertical));
+  /*border-bottom: 3px solid var(--global--color-border);*/
+  /*padding-bottom: calc(2 * var(--global--spacing-vertical));*/
+  /*margin-bottom: calc(3 * var(--global--spacing-vertical));*/
 }
 
 .home .entry-header {
@@ -3446,7 +3447,11 @@ table.wp-calendar-table caption {
 }
 
 .singular .entry-title {
-  font-size: var(--global--font-size-page-title);
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 h1.entry-title {
@@ -4725,20 +4730,14 @@ h1.page-title {
   font-weight: var(--form--label-weight);
 }
 .search-form .search-field {
-  width: 99%;
-  padding: 6px;
-  line-height: 2rem;
-  margin: 0 1px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
+  max-width: inherit;
+  margin-top: calc(var(--global--spacing-vertical) / 3);
+  margin-right: calc(0.66 * var(--global--spacing-horizontal));
 }
 .search-form .search-submit {
-  font-size: 1rem;
-  line-height: 1rem;
-  color: white;
-  font-weight: normal;
-  padding: 12px;
-  border-radius: 6px;
-  background-color: #28a745;
+  margin-top: calc(var(--global--spacing-vertical) / 3);
+  margin-left: 10px;
 }
 
 .widget_search > .search-form .search-field {
@@ -5116,13 +5115,68 @@ footer {
   min-width: auto;
 }
 
-/*# sourceMappingURL=style.css.map */
-.form-control-borderless {
-  border: none;
+/* Detail css */
+.title {
+  max-width: var(--responsive--aligndefault-width);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
-  border: none;
-  outline: none;
-  box-shadow: none;
+.headlinesdate {
+  font-size: 16px;
+  background: #f5ce31;
+  border-radius: 50%;
+  padding: 10px 16px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
 }
+
+.headlinesdate .headlinesdm, .headlinesdate {
+  float: left;
+  font-family: 'Prata', serif;
+}
+
+.headlinesday {
+  border-bottom: 1px solid #000;
+}
+
+.headlinesdate .headlinesday, .headlines .headlinesmonth {
+  line-height: 1.7em;
+}
+
+.headlinesdate .headlinesyear {
+  line-height: 3.5em;
+  float: left;
+  margin-left: 3px;
+}
+
+.overviewline {
+  border-bottom: 1px solid #cecece;
+  margin: 25px 0 15px;
+  position: relative;
+}
+
+.overviewline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  border-width: 12px 12px 0;
+  border-style: solid;
+  border-color: #cecece transparent;
+  display: block;
+  width: 0;
+}
+
+.overviewline:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 51px;
+  border-width: 11px 11px 0;
+  border-style: solid;
+  border-color: #f5f5f5 transparent;
+  display: block;
+  width: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
