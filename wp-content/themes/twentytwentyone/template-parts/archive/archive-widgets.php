@@ -20,7 +20,7 @@ if (is_active_sidebar('archive-1')): ?>
                         <div class="col-7">
                             <div class="row">
                                 <div class="col-6 ">
-                                    <div class="box-border">
+                                    <div class="p-box-border">
                                         <li class="p-month-archive ">
                                             <span class="p-number">1</span><a href="#">Giáo sư Mỹ tìm lại mẹ ruột cho hai
                                                 con
@@ -29,7 +29,7 @@ if (is_active_sidebar('archive-1')): ?>
                                         </li>
                                     </div>
 
-                                    <div class="box-border">
+                                    <div class="p-box-border">
                                         <li class="p-month-archive ">
                                             <span class="p-number">2</span><a href="#">Giáo sư Mỹ tìm lại mẹ ruột cho hai
                                                 con
@@ -37,7 +37,7 @@ if (is_active_sidebar('archive-1')): ?>
 
                                         </li>
                                     </div>
-                                    <div class="box-border">
+                                    <div class="p-box-border">
                                         <li class="p-month-archive ">
                                             <span class="p-number">3</span><a href="#">Giáo sư Mỹ tìm lại mẹ ruột cho hai
                                                 con
@@ -45,7 +45,7 @@ if (is_active_sidebar('archive-1')): ?>
 
                                         </li>
                                     </div>
-                                    <div class="box-border">
+                                    <div class="p-box-border">
                                         <li class="p-month-archive ">
                                             <span class="p-number">4</span><a href="#">Giáo sư Mỹ tìm lại mẹ ruột cho hai
                                                 con
@@ -55,7 +55,7 @@ if (is_active_sidebar('archive-1')): ?>
                                     </div>
                                 </div>
                                 <div class="col-6 box-border box-border-right ">
-                                    <div class="box-border">
+                                    <div class="p-box-border">
                                         <li class="p-month-archive ">
                                             <span class="p-number">5</span><a href="#">Giáo sư Mỹ tìm lại mẹ ruột cho hai
                                                 con
@@ -63,7 +63,7 @@ if (is_active_sidebar('archive-1')): ?>
 
                                         </li>
                                     </div>
-                                    <div class="box-border">
+                                    <div class="p-box-border">
                                         <li class="p-month-archive ">
                                             <span class="p-number">6</span><a href="#">Giáo sư Mỹ tìm lại mẹ ruột cho hai
                                                 con
@@ -71,14 +71,14 @@ if (is_active_sidebar('archive-1')): ?>
 
                                         </li>
                                     </div>
-                                    <div class="box-border">
+                                    <div class="p-box-border">
                                         <li class="p-month-archive ">
                                             <span class="p-number">7</span><a href="#">Giáo sư Mỹ tìm lại mẹ ruột cho hai
                                                 con
                                                 gốc Việt</a>
                                         </li>
                                     </div>
-                                    <div class="box-border">
+                                    <div class="p-box-border">
                                         <li class="p-month-archive ">
                                             <span class="p-number">8</span><a href="#">Giáo sư Mỹ tìm lại mẹ ruột cho hai
                                                 con

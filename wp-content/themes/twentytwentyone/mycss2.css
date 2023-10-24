@@ -76,10 +76,10 @@
     height: 100%;
     position: absolute;
     top: 0px;
-    left: 110%;
+    left: 100%;
     background: #e5e5e5;
 }
-.box-border{
+.p-box-border{
     list-style: none;
     position: relative;
     padding-left: 35px;
