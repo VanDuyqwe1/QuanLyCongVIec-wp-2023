@@ -12,34 +12,34 @@
 ?>
 
 <section class="no-results not-found">
-    <header class="page-header alignwide">
+	<header class="page-header alignwide">
 		<?php if ( is_search() ) : ?>
 
-            <h1 class="page-title">
+			<h1 class="page-title">
 				<?php
 				printf(
-				/* translators: %s: Search term. */
-					esc_html__( 'Search result for: "%s"', 'twentytwentyone' ),
+					/* translators: %s: Search term. */
+					esc_html__( 'Results for "%s"', 'twentytwentyone' ),
 					'<span class="page-description search-term">' . esc_html( get_search_query() ) . '</span>'
 				);
 				?>
-            </h1>
+			</h1>
 
 		<?php else : ?>
 
-            <h1 class="page-title"><?php esc_html_e( 'Nothing here', 'twentytwentyone' ); ?></h1>
+			<h1 class="page-title"><?php esc_html_e( 'Nothing here', 'twentytwentyone' ); ?></h1>
 
 		<?php endif; ?>
-    </header><!-- .page-header -->
+	</header><!-- .page-header -->
 
-    <div class="page-content">
+	<div class="page-content default-max-width">
 
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
 			<?php
 			printf(
 				'<p>' . wp_kses(
-				/* translators: %s: Link to WP admin new post page. */
+					/* translators: %s: Link to WP admin new post page. */
 					__( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'twentytwentyone' ),
 					array(
 						'a' => array(
@@ -52,24 +52,15 @@
 			?>
 
 		<?php elseif ( is_search() ) : ?>
-            <div class="search-result-info default-max-width">
-                <p class="search-pattern">Search:
-					<?php
-					printf(
-					/* translators: %s: Search term. */
-						esc_html__( '%s', 'twentytwentyone' ),
-						'<span class="page-description search-term">"' . esc_html( get_search_query() ) . '"</span>'
-					);
-					?>
-                </p>
-                <p><?php esc_html_e( 'We could not find any results for your search. You can give it another try through the search form below.', 'twentytwentyone' ); ?></p>
-            </div>
+
+			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentytwentyone' ); ?></p>
 			<?php get_search_form(); ?>
+
 		<?php else : ?>
 
-            <p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentytwentyone' ); ?></p>
+			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentytwentyone' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>
-    </div><!-- .page-content -->
+	</div><!-- .page-content -->
 </section><!-- .no-results -->
