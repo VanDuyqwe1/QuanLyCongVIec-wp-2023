@@ -12,6 +12,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 44-tuan/5-search-result
 	<?php if ( ! is_front_page() ) : ?>
 		<header class="entry-header alignwide">
 			<?php get_template_part( 'template-parts/header/entry-header' ); ?>

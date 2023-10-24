@@ -81,6 +81,11 @@
   --global--color-secondary: var(--global--color-gray); /* Headings */
   --global--color-primary-hover: var(--global--color-primary);
   --global--color-background: var(--global--color-white); /* Mint, default body background */
+  --global--color-428bca: #428bca;
+  --global--color-primary: var(--global--color-dark-gray); /* Body text color, site title, footer text color. */
+  --global--color-secondary: var(--global--color-gray); /* Headings */
+  --global--color-primary-hover: var(--global--color-primary);
+  --global--color-background: var(--global--color-white-90); /* Mint, default body background */
   --global--color-border: var(--global--color-primary); /* Used for borders (separators) */
   /* Spacing */
   --global--spacing-unit: 20px;
@@ -226,6 +231,20 @@
     --heading--font-size-h2: 3rem;
   }
 }
+@media only screen and (max-width: 991px) {
+  .w-mb-100 {
+    width: 100% !important;
+  }
+}
+
+.hover-menu:hover {
+  background: #e7e7e7;
+}
+
+.bg-while {
+  background: #fff;
+}
+
 /**
  * Responsive Styles
  */

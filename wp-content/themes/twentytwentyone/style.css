@@ -165,12 +165,11 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --global--color-white-50: rgba(255, 255, 255, 0.5);
   --global--color-white-90: rgba(255, 255, 255, 0.9);
   --global--color-e7e7e7: #e7e7e7;
-  --global--color-79aff5: #79aff5;
-  --global--color-b2b2b2: #b2b2b2;
+  --global--color-428bca: #428bca;
   --global--color-primary: var(--global--color-dark-gray); /* Body text color, site title, footer text color. */
   --global--color-secondary: var(--global--color-gray); /* Headings */
   --global--color-primary-hover: var(--global--color-primary);
-  --global--color-background: var(--global--color-white); /* Mint, default body background */
+  --global--color-background: var(--global--color-white-90); /* Mint, default body background */
   --global--color-border: var(--global--color-primary); /* Used for borders (separators) */
   /* Spacing */
   --global--spacing-unit: 20px;
@@ -316,6 +315,20 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
     --heading--font-size-h2: 3rem;
   }
 }
+@media only screen and (max-width: 991px) {
+  .w-mb-100 {
+    width: 100% !important;
+  }
+}
+
+.hover-menu:hover {
+  background: #e7e7e7;
+}
+
+.bg-while {
+  background: #fff;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -335,7 +348,6 @@ html {
  */
 body {
   margin: 0;
-  background: url("../../../wp-admin/images/bg_pattern.png") repeat;
 }
 
 /**
@@ -783,6 +795,44 @@ template {
   margin-right: auto;
   margin-bottom: var(--global--spacing-vertical);
   margin-left: auto;
+}
+
+.wrap-post {
+  max-width: var(--responsive--aligndefault-width);
+  background-color: var(--global--color-white);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.wrap-post .top_news_block_desc {
+  font-size: 0.9em;
+  padding: 15px;
+}
+.wrap-post .top_news_block_desc .topnewstime {
+  text-align: center;
+}
+.wrap-post .top_news_block_desc .shortdesc {
+  border-left: 1px solid #666;
+}
+.wrap-post .top_news_block_desc .topnewsdate {
+  font-size: 3.1em;
+  line-height: 1em;
+}
+.wrap-post h2 {
+  line-height: 0.4;
+  color: var(--global--color-428bca);
+  text-transform: uppercase;
+}
+.wrap-post h2 a {
+  font-size: var(--global--font-size-base);
+  text-decoration: none;
+  display: block;
+  line-height: 1.4;
+}
+.wrap-post .entry-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 /*

@@ -98,3 +98,23 @@
 		margin-bottom: 0;
 	}
 }
+
+@mixin split_str($line_number) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line_number;
+}
+
+@mixin maxWidth($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin minWidth($breakpoint) {
+    @media only screen and (min-width: $breakpoint) {
+        @content;
+    }
+}
