@@ -46,6 +46,54 @@
     top: 10px;
     left: -6px;
 }
-.widget-title{
-    color: red;
-  }
+
+
+/* asd */
+.p-number{
+    font-family: "Merriweather",serif;
+    font-size: 48px;
+    color: #222;
+    font-weight: bold;
+    position: absolute;
+    top: -8px;
+    left: 0;
+    -webkit-font-feature-settings: "pnum" on,"lnum" on;
+    font-feature-settings: "pnum" on,"lnum" 
+}
+.p-month-archive::before{
+    content: "";
+    width: 110%;
+    height: 1px;
+    position: absolute;
+    top:  -5px;
+    left: 0%;
+    background: #e5e5e5;
+
+}
+.p-month-archive::after{
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 110%;
+    background: #e5e5e5;
+}
+.box-border{
+    list-style: none;
+    position: relative;
+    padding-left: 35px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    
+}
+.p-title-archive{
+    font-size: 30px;
+    border-bottom: 1px solid chocolate;
+    width: 150px;  
+}
+.p-detail-archive{
+    padding-bottom: 5px;
+}
+
+
