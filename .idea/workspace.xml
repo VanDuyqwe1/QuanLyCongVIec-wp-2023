@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="49c24601-b45c-4c36-bf5e-f3159f5421b0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/searchform.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/searchform.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/template-parts/footer/footer-widgets.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/template-parts/footer/footer-widgets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/template-parts/content/content-none.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/template-parts/content/content-none.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
