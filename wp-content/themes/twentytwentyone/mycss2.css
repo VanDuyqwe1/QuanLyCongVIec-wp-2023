@@ -1,6 +1,4 @@
-.widget-title{
-    color: red;
-  }
+
 /* CSS Test begin */
 .comment-box {
     margin-top: 30px !important;
@@ -48,3 +46,7 @@
     top: 10px;
     left: -6px;
 }
+/* css của archive  */
+.widget-title{
+    color: red;
+  }
