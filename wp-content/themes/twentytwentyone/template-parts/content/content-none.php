@@ -39,7 +39,11 @@
 			<?php
 			printf(
 				'<p>' . wp_kses(
+<<<<<<< HEAD
 					/* translators: %s: Link to WP admin new post page. */
+=======
+				/* translators: %s: Link to WP admin new post page. */
+>>>>>>> 44-tuan/7-prev-next
 					__( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'twentytwentyone' ),
 					array(
 						'a' => array(
@@ -52,6 +56,7 @@
 			?>
 
 		<?php elseif ( is_search() ) : ?>
+<<<<<<< HEAD
 
 			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentytwentyone' ); ?></p>
 			<?php get_search_form(); ?>
@@ -63,4 +68,26 @@
 
 		<?php endif; ?>
 	</div><!-- .page-content -->
+=======
+            <div class="search-result-info default-max-width">
+                <p class="search-pattern">Search:
+					<?php
+					printf(
+					/* translators: %s: Search term. */
+						esc_html__( '%s', 'twentytwentyone' ),
+						'<span class="page-description search-term">"' . esc_html( get_search_query() ) . '"</span>'
+					);
+					?>
+                </p>
+                <p><?php esc_html_e( 'We could not find any results for your search. You can give it another try through the search form below.', 'twentytwentyone' ); ?></p>
+            </div>
+			<?php get_search_form(); ?>
+		<?php else : ?>
+
+            <p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentytwentyone' ); ?></p>
+			<?php get_search_form(); ?>
+
+		<?php endif; ?>
+    </div><!-- .page-content -->
+>>>>>>> 44-tuan/7-prev-next
 </section><!-- .no-results -->

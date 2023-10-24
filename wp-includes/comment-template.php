@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 <?php
 /**
  * Comment template functions
@@ -2499,7 +2501,7 @@ function comment_form( $args = array(), $post = null ) {
 	$checked_attribute  = ( $html5 ? ' checked' : ' checked="checked"' );
 
 	// Identify required fields visually and create a message about the indicator.
-	$required_indicator = ' ' . wp_required_field_indicator();
+	$required_indicator = ' ' ;//. wp_required_field_indicator();
 	$required_text      = ' ' . wp_required_field_message();
 
 	$fields = array(
@@ -2579,8 +2581,8 @@ function comment_form( $args = array(), $post = null ) {
 		'comment_field'        => sprintf(
 			'<p class="comment-form-comment">%s %s</p>',
 			sprintf(
-				'<label for="comment">%s%s</label>',
-				_x( 'Comment', 'noun' ),
+				// '<label for="comment">%s%s</label>',
+				// _x( 'Comment', 'noun' ),
 				$required_indicator
 			),
 			'<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525"' . $required_attribute . '></textarea>'
@@ -2871,6 +2873,8 @@ function comment_form( $args = array(), $post = null ) {
 		?>
 	</div><!-- #respond -->
 	<?php
+	get_template_part( 'template-parts/comment/comment-widgets' );
+	do_action( 'comment_form_before' );
 
 	/**
 	 * Fires after the comment form.

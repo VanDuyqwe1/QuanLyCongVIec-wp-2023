@@ -131,15 +131,12 @@
  * Block & non-gutenberg content wrapper children
  * - Sets spacing-vertical margin logic
  */
-.site-main>article>*,
-// apply vertical margins to article level
-.site-main>.not-found>*,
-// apply vertical margins to article level
-.entry-content>*,
-[class*="inner-container"]>*,
-.wp-block-template-part>*,
-.wp-block-post-template :where(li > *) {
-	// using :where keeps specificity low.
+.site-main > article > *, // apply vertical margins to article level
+.site-main > .not-found > *, // apply vertical margins to article level
+.entry-content > *,
+[class*="inner-container"] > *,
+.wp-block-template-part > *,
+.wp-block-post-template :where(li > *) { // using :where keeps specificity low.
 
 	margin-top: calc(0.666 * var(--global--spacing-vertical));
 	margin-bottom: calc(0.666 * var(--global--spacing-vertical));
@@ -158,8 +155,8 @@
 	}
 }
 
-.site-footer>*,
-.widget-area>* {
+.site-footer > *,
+.widget-area > * {
 	margin-top: calc(0.666 * var(--global--spacing-vertical));
 	margin-bottom: calc(0.666 * var(--global--spacing-vertical));
 
@@ -174,11 +171,11 @@
  * - Sets spacing-unit margins
  */
 //.site-header > *, // Removed, to align site title and menu.
-.entry-header>*,
-.post-thumbnail>*,
-.page-content>*,
-.comment-content>*,
-.widget>* {
+.entry-header > *,
+.post-thumbnail > *,
+.page-content > *,
+.comment-content > *,
+.widget > * {
 	margin-top: var(--global--spacing-unit);
 	margin-bottom: var(--global--spacing-unit);
 
@@ -196,12 +193,12 @@
  * .entry-content children specific controls
  * - Adds special margin overrides for alignment utility classes
  */
-.entry-content>* {
+.entry-content > * {
 
 	&.alignleft,
 	&.alignright,
-	&.alignleft:first-child+*,
-	&.alignright:first-child+*,
+	&.alignleft:first-child + *,
+	&.alignright:first-child + *,
 	&.alignfull.has-background {
 		margin-top: 0;
 	}
@@ -212,8 +209,8 @@
 	}
 
 	/* Reset alignleft and alignright margins after alignfull */
-	&.alignfull+.alignleft,
-	&.alignfull+.alignright {
+	&.alignfull + .alignleft,
+	&.alignfull + .alignright {
 		margin-top: var(--global--spacing-vertical);
 	}
 }

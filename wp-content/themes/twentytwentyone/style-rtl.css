@@ -334,7 +334,6 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .bg-while {
   background: #fff;
 }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -3466,6 +3465,50 @@ table.wp-calendar-table caption {
   margin-right: 0;
 }
 
+.widget-prev-next {
+  max-width: var(--responsive--aligndefault-width);
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--global--color-white);
+  padding: 20px 30px;
+}
+.widget-prev-next .headlinesdate {
+  float: right;
+  width: 15%;
+  min-width: 55px;
+  display: table-cell;
+  vertical-align: middle;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.widget-prev-next .headlinesdate .headlinesdm {
+  float: right;
+}
+.widget-prev-next .headlinesdate .headlinesdm .headlinesday {
+  border-bottom: 1px solid #000;
+}
+.widget-prev-next .headlinesdate .headlinesyear {
+  line-height: 3.5em;
+  float: right;
+  margin-right: 3px;
+}
+.widget-prev-next .headlinestitle {
+  display: table-cell;
+  vertical-align: middle;
+  width: 80%;
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.widget-prev-next .headlinestitle a {
+  font-size: var(--global--font-size-md);
+}
+.widget-prev-next ul li {
+  display: table;
+  width: 100%;
+  margin: 10px 0 !important;
+}
+
 .entry-title {
   color: var(--entry-header--color);
   font-size: var(--entry-header--font-size);
@@ -4698,7 +4741,7 @@ h1.page-title {
 }
 .widget a {
   color: var(--footer--color-link);
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-style: solid;
   text-decoration-color: currentColor;
 }

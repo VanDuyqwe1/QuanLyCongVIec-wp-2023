@@ -165,12 +165,12 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --global--color-white-50: rgba(255, 255, 255, 0.5);
   --global--color-white-90: rgba(255, 255, 255, 0.9);
   --global--color-e7e7e7: #e7e7e7;
-  --global--color-428bca: #428bca;
   --global--color-primary: var(--global--color-dark-gray); /* Body text color, site title, footer text color. */
   --global--color-secondary: var(--global--color-gray); /* Headings */
   --global--color-primary-hover: var(--global--color-primary);
-  --global--color-background: var(--global--color-white-90); /* Mint, default body background */
+  --global--color-background: var(--global--color-white); /* Mint, default body background */
   --global--color-border: var(--global--color-primary); /* Used for borders (separators) */
+  --global--color-428bca: #428bca;
   /* Spacing */
   --global--spacing-unit: 20px;
   --global--spacing-measure: unset;
@@ -328,7 +328,6 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .bg-while {
   background: #fff;
 }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -348,6 +347,7 @@ html {
  */
 body {
   margin: 0;
+  /* background: url("../../../wp-admin/images/bg_pattern.png") repeat; */
 }
 
 /**
@@ -3373,11 +3373,11 @@ table.wp-calendar-table caption {
 #colophon {
   background-color: #007b5e;
 }
-
 .site-footer {
   padding-top: 0;
   padding-bottom: 1rem;
   max-width: none;
+  /* padding-bottom: calc(1.7 * var(--global--spacing-vertical)); */
 }
 .no-widgets .site-footer {
   margin-top: calc(6 * var(--global--spacing-vertical));
@@ -3420,6 +3420,12 @@ table.wp-calendar-table caption {
     margin-left: calc(0.5 * var(--global--spacing-vertical));
   }
 }
+/* .site-footer > .site-info a {
+  color: var(--footer--color-link);
+}
+.site-footer > .site-info a:link, .site-footer > .site-info a:visited, .site-footer > .site-info a:active {
+  color: var(--footer--color-link);
+} */
 .site-footer > .site-info a {
   color: var(--global--color-white);
 }
@@ -3470,6 +3476,53 @@ table.wp-calendar-table caption {
   margin-right: calc(0.66 * var(--global--spacing-unit));
   min-width: 44px;
   min-height: 44px;
+}
+.page-links .post-page-numbers:first-child {
+  margin-left: 0;
+}
+
+.widget-prev-next {
+  max-width: var(--responsive--aligndefault-width);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--global--color-white);
+  padding: 20px 30px;
+}
+.widget-prev-next .headlinesdate {
+  float: left;
+  width: 15%;
+  min-width: 55px;
+  display: table-cell;
+  vertical-align: middle;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.widget-prev-next .headlinesdate .headlinesdm {
+  float: left;
+}
+.widget-prev-next .headlinesdate .headlinesdm .headlinesday {
+  border-bottom: 1px solid #000;
+}
+.widget-prev-next .headlinesdate .headlinesyear {
+  line-height: 3.5em;
+  float: left;
+  margin-left: 3px;
+}
+.widget-prev-next .headlinestitle {
+  display: table-cell;
+  vertical-align: middle;
+  width: 80%;
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.widget-prev-next .headlinestitle a {
+  font-size: var(--global--font-size-md);
+}
+.widget-prev-next ul li {
+  display: table;
+  width: 100%;
+  margin: 10px 0 !important;
 }
 .page-links .post-page-numbers:first-child {
   margin-left: 0;
@@ -4642,14 +4695,21 @@ h1.page-title {
 .footer-widgets {
   background-color: #007b5e;
 }
-
 .widget-area {
+  margin-top: calc(6 * var(--global--spacing-vertical));
+  padding-bottom: calc(var(--global--spacing-vertical) / 3);
+  color: var(--footer--color-text);
+  font-size: var(--footer--font-size);
+  font-family: var(--footer--font-family);
+}
+
+/* .widget-area {
   margin-top: calc(2 * var(--global--spacing-vertical));
   color: var(--footer--color-text);
   font-size: var(--footer--font-size);
   font-family: var(--footer--font-family);
   background-color: #007b5e;
-}
+} */
 @media only screen and (min-width: 652px) {
   .widget-area {
     display: grid;
@@ -4737,7 +4797,7 @@ h1.page-title {
 }
 .widget a {
   color: var(--footer--color-link);
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-style: solid;
   text-decoration-color: currentColor;
 }
@@ -4785,9 +4845,23 @@ h1.page-title {
   margin-top: calc(var(--global--spacing-vertical) / 3);
   margin-right: calc(0.66 * var(--global--spacing-horizontal));
 }
-.search-form .search-submit {
+/* .search-form .search-submit {
   margin-top: calc(var(--global--spacing-vertical) / 3);
   margin-left: 10px;
+  width: 99%;
+  padding: 6px;
+  line-height: 2rem;
+  margin: 0 1px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+} */
+.search-form .search-submit {
+  font-size: 1rem;
+  line-height: 1rem;
+  color: white;
+  font-weight: normal;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #28a745;
 }
 
 .widget_search > .search-form .search-field {
@@ -5230,3 +5304,13 @@ footer {
 }
 
 /*# sourceMappingURL=style.css.map */
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+

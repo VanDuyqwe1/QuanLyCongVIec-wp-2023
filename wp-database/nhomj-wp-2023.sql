@@ -2,10 +2,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 44-tuan/7-prev-next
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
@@ -15,6 +18,9 @@
 -- Phiên bản PHP: 8.0.28
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 =======
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
@@ -23,11 +29,15 @@
 -- Generation Time: Oct 24, 2023 at 05:08 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -43,6 +53,7 @@ SET time_zone = "+00:00";
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Cơ sở dữ liệu: `nhomj-wp-2023`
 =======
 -- Database: `nhomj-wp-2023`
@@ -53,11 +64,18 @@ SET time_zone = "+00:00";
 =======
 -- Cơ sở dữ liệu: `nhomj-wp-2023`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Cơ sở dữ liệu: `nhomj-wp-2023`
+=======
+-- Database: `nhomj-wp-2023`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -71,6 +89,12 @@ SET time_zone = "+00:00";
 =======
 -- Cấu trúc bảng cho bảng `wp_commentmeta`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Cấu trúc bảng cho bảng `wp_commentmeta`
+=======
+-- Table structure for table `wp_commentmeta`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 CREATE TABLE `wp_commentmeta` (
@@ -86,6 +110,7 @@ CREATE TABLE `wp_commentmeta` (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `wp_comments`
 =======
 -- Table structure for table `wp_comments`
@@ -96,6 +121,12 @@ CREATE TABLE `wp_commentmeta` (
 =======
 -- Cấu trúc bảng cho bảng `wp_comments`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Cấu trúc bảng cho bảng `wp_comments`
+=======
+-- Table structure for table `wp_comments`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 CREATE TABLE `wp_comments` (
@@ -120,6 +151,7 @@ CREATE TABLE `wp_comments` (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `wp_comments`
 =======
 -- Dumping data for table `wp_comments`
@@ -130,6 +162,12 @@ CREATE TABLE `wp_comments` (
 =======
 -- Đang đổ dữ liệu cho bảng `wp_comments`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Đang đổ dữ liệu cho bảng `wp_comments`
+=======
+-- Dumping data for table `wp_comments`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
@@ -138,6 +176,7 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -151,6 +190,12 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 =======
 -- Cấu trúc bảng cho bảng `wp_links`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Cấu trúc bảng cho bảng `wp_links`
+=======
+-- Table structure for table `wp_links`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 CREATE TABLE `wp_links` (
@@ -175,6 +220,7 @@ CREATE TABLE `wp_links` (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `wp_options`
 =======
 -- Table structure for table `wp_options`
@@ -185,6 +231,12 @@ CREATE TABLE `wp_links` (
 =======
 -- Cấu trúc bảng cho bảng `wp_options`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Cấu trúc bảng cho bảng `wp_options`
+=======
+-- Table structure for table `wp_options`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 CREATE TABLE `wp_options` (
@@ -198,10 +250,13 @@ CREATE TABLE `wp_options` (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 44-tuan/7-prev-next
 -- Đang đổ dữ liệu cho bảng `wp_options`
 --
 
@@ -210,6 +265,9 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (2, 'home', 'http://localhost:8080/nhom-L-wp', 'yes'),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 =======
 -- Dumping data for table `wp_options`
 --
@@ -217,11 +275,15 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 (1, 'siteurl', 'http://localhost/nhom-L-wp', 'yes'),
 (2, 'home', 'http://localhost/nhom-L-wp', 'yes'),
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 (3, 'blogname', 'Nhóm G', 'yes'),
 (4, 'blogdescription', '', 'yes'),
 (5, 'users_can_register', '0', 'yes'),
@@ -298,6 +360,9 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 (76, 'widget_categories', 'a:0:{}', 'yes'),
 (77, 'widget_text', 'a:0:{}', 'yes'),
 (78, 'widget_rss', 'a:0:{}', 'yes'),
@@ -305,6 +370,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (76, 'widget_categories', 'a:2:{i:1;a:0:{}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (77, 'widget_text', 'a:2:{i:1;a:0:{}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (78, 'widget_rss', 'a:2:{i:1;a:0:{}s:12:\"_multiwidget\";i:1;}', 'yes'),
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 (76, 'widget_categories', 'a:0:{}', 'yes'),
@@ -316,6 +382,9 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (77, 'widget_text', 'a:0:{}', 'yes'),
 (78, 'widget_rss', 'a:0:{}', 'yes'),
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 (79, 'uninstall_plugins', 'a:0:{}', 'no'),
 (80, 'timezone_string', '', 'yes'),
 (81, 'page_for_posts', '0', 'yes'),
@@ -341,10 +410,13 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 44-tuan/7-prev-next
 (101, 'fresh_site', '1', 'yes'),
 (102, 'user_count', '1', 'no'),
 (103, 'widget_block', 'a:6:{i:2;a:1:{s:7:\"content\";s:19:\"<!-- wp:search /-->\";}i:3;a:1:{s:7:\"content\";s:154:\"<!-- wp:group --><div class=\"wp-block-group\"><!-- wp:heading --><h2>Recent Posts</h2><!-- /wp:heading --><!-- wp:latest-posts /--></div><!-- /wp:group -->\";}i:4;a:1:{s:7:\"content\";s:227:\"<!-- wp:group --><div class=\"wp-block-group\"><!-- wp:heading --><h2>Recent Comments</h2><!-- /wp:heading --><!-- wp:latest-comments {\"displayAvatar\":false,\"displayDate\":false,\"displayExcerpt\":false} /--></div><!-- /wp:group -->\";}i:5;a:1:{s:7:\"content\";s:146:\"<!-- wp:group --><div class=\"wp-block-group\"><!-- wp:heading --><h2>Archives</h2><!-- /wp:heading --><!-- wp:archives /--></div><!-- /wp:group -->\";}i:6;a:1:{s:7:\"content\";s:150:\"<!-- wp:group --><div class=\"wp-block-group\"><!-- wp:heading --><h2>Categories</h2><!-- /wp:heading --><!-- wp:categories /--></div><!-- /wp:group -->\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -352,17 +424,24 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (105, 'cron', 'a:7:{i:1697817222;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1697856822;a:4:{s:18:\"wp_https_detection\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1697856864;a:1:{s:21:\"wp_update_user_counts\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1697900022;a:2:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1697900064;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1697900067;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 =======
 (101, 'fresh_site', '0', 'yes'),
 (102, 'user_count', '1', 'no'),
 (103, 'widget_block', 'a:4:{i:3;a:1:{s:7:\"content\";s:185:\"<!-- wp:group -->\n<div class=\"wp-block-group\"><!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Recent Posts</h2>\n<!-- /wp:heading -->\n\n<!-- wp:latest-posts /--></div>\n<!-- /wp:group -->\";}i:4;a:1:{s:7:\"content\";s:258:\"<!-- wp:group -->\n<div class=\"wp-block-group\"><!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Recent Comments</h2>\n<!-- /wp:heading -->\n\n<!-- wp:latest-comments {\"displayAvatar\":false,\"displayDate\":false,\"displayExcerpt\":false} /--></div>\n<!-- /wp:group -->\";}i:6;a:1:{s:7:\"content\";s:181:\"<!-- wp:group -->\n<div class=\"wp-block-group\"><!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Categories</h2>\n<!-- /wp:heading -->\n\n<!-- wp:categories /--></div>\n<!-- /wp:group -->\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (104, 'sidebars_widgets', 'a:3:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:3:{i:0;s:7:\"block-3\";i:1;s:7:\"block-4\";i:2;s:7:\"block-6\";}s:13:\"array_version\";i:3;}', 'yes'),
 (105, 'cron', 'a:9:{i:1698090822;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1698116022;a:4:{s:18:\"wp_https_detection\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1698116064;a:1:{s:21:\"wp_update_user_counts\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1698159222;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1698159264;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1698159267;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1698504822;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}i:1698663889;a:1:{s:30:\"wp_delete_temp_updater_backups\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}s:7:\"version\";i:2;}', 'yes'),
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 (106, 'widget_pages', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (107, 'widget_calendar', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (108, 'widget_archives', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -384,10 +463,13 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 44-tuan/7-prev-next
 (124, 'https_detection_errors', 'a:1:{s:20:\"https_request_failed\";a:1:{i:0;s:21:\"HTTPS request failed.\";}}', 'yes'),
 (125, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:2:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-6.3.2.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-6.3.2.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-6.3.2-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-6.3.2-new-bundled.zip\";s:7:\"partial\";s:69:\"https://downloads.wordpress.org/release/wordpress-6.3.2-partial-1.zip\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"6.3.2\";s:7:\"version\";s:5:\"6.3.2\";s:11:\"php_version\";s:5:\"7.0.0\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"6.1\";s:15:\"partial_version\";s:5:\"6.3.1\";}i:1;O:8:\"stdClass\":11:{s:8:\"response\";s:10:\"autoupdate\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-6.3.2.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-6.3.2.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-6.3.2-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-6.3.2-new-bundled.zip\";s:7:\"partial\";s:69:\"https://downloads.wordpress.org/release/wordpress-6.3.2-partial-1.zip\";s:8:\"rollback\";s:70:\"https://downloads.wordpress.org/release/wordpress-6.3.2-rollback-1.zip\";}s:7:\"current\";s:5:\"6.3.2\";s:7:\"version\";s:5:\"6.3.2\";s:11:\"php_version\";s:5:\"7.0.0\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"6.1\";s:15:\"partial_version\";s:5:\"6.3.1\";s:9:\"new_files\";s:0:\"\";}}s:12:\"last_checked\";i:1697813624;s:15:\"version_checked\";s:5:\"6.3.1\";s:12:\"translations\";a:0:{}}', 'no'),
 (128, '_site_transient_timeout_theme_roots', '1697815425', 'no'),
@@ -396,15 +478,22 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (131, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1697813627;s:8:\"response\";a:1:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:3:\"5.3\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:54:\"https://downloads.wordpress.org/plugin/akismet.5.3.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:60:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=2818463\";s:2:\"1x\";s:60:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=2818463\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:63:\"https://ps.w.org/akismet/assets/banner-1544x500.png?rev=2900731\";s:2:\"1x\";s:62:\"https://ps.w.org/akismet/assets/banner-772x250.png?rev=2900731\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:3:\"5.8\";s:6:\"tested\";s:5:\"6.3.2\";s:12:\"requires_php\";s:6:\"5.6.20\";}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:1:{s:9:\"hello.php\";O:8:\"stdClass\":10:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:5:\"1.7.2\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/hello-dolly.1.7.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=2052855\";s:2:\"1x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=2052855\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:67:\"https://ps.w.org/hello-dolly/assets/banner-1544x500.jpg?rev=2645582\";s:2:\"1x\";s:66:\"https://ps.w.org/hello-dolly/assets/banner-772x250.jpg?rev=2052855\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:3:\"4.6\";}}s:7:\"checked\";a:2:{s:19:\"akismet/akismet.php\";s:3:\"5.2\";s:9:\"hello.php\";s:5:\"1.7.2\";}}', 'no'),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 =======
 (124, 'https_detection_errors', 'a:1:{s:23:\"ssl_verification_failed\";a:1:{i:0;s:24:\"SSL verification failed.\";}}', 'yes'),
 (125, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:2:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-6.3.2.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-6.3.2.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-6.3.2-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-6.3.2-new-bundled.zip\";s:7:\"partial\";s:69:\"https://downloads.wordpress.org/release/wordpress-6.3.2-partial-1.zip\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"6.3.2\";s:7:\"version\";s:5:\"6.3.2\";s:11:\"php_version\";s:5:\"7.0.0\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"6.1\";s:15:\"partial_version\";s:5:\"6.3.1\";}i:1;O:8:\"stdClass\":11:{s:8:\"response\";s:10:\"autoupdate\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-6.3.2.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-6.3.2.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-6.3.2-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-6.3.2-new-bundled.zip\";s:7:\"partial\";s:69:\"https://downloads.wordpress.org/release/wordpress-6.3.2-partial-1.zip\";s:8:\"rollback\";s:70:\"https://downloads.wordpress.org/release/wordpress-6.3.2-rollback-1.zip\";}s:7:\"current\";s:5:\"6.3.2\";s:7:\"version\";s:5:\"6.3.2\";s:11:\"php_version\";s:5:\"7.0.0\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"6.1\";s:15:\"partial_version\";s:5:\"6.3.1\";s:9:\"new_files\";s:0:\"\";}}s:12:\"last_checked\";i:1698073335;s:15:\"version_checked\";s:5:\"6.3.1\";s:12:\"translations\";a:0:{}}', 'no'),
 (130, '_site_transient_update_themes', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1698073338;s:7:\"checked\";a:3:{s:15:\"twentytwentyone\";s:3:\"1.9\";s:17:\"twentytwentythree\";s:3:\"1.2\";s:15:\"twentytwentytwo\";s:3:\"1.5\";}s:8:\"response\";a:0:{}s:9:\"no_update\";a:3:{s:15:\"twentytwentyone\";a:6:{s:5:\"theme\";s:15:\"twentytwentyone\";s:11:\"new_version\";s:3:\"1.8\";s:3:\"url\";s:45:\"https://wordpress.org/themes/twentytwentyone/\";s:7:\"package\";s:61:\"https://downloads.wordpress.org/theme/twentytwentyone.1.8.zip\";s:8:\"requires\";s:3:\"5.3\";s:12:\"requires_php\";s:3:\"5.6\";}s:17:\"twentytwentythree\";a:6:{s:5:\"theme\";s:17:\"twentytwentythree\";s:11:\"new_version\";s:3:\"1.2\";s:3:\"url\";s:47:\"https://wordpress.org/themes/twentytwentythree/\";s:7:\"package\";s:63:\"https://downloads.wordpress.org/theme/twentytwentythree.1.2.zip\";s:8:\"requires\";s:3:\"6.1\";s:12:\"requires_php\";s:3:\"5.6\";}s:15:\"twentytwentytwo\";a:6:{s:5:\"theme\";s:15:\"twentytwentytwo\";s:11:\"new_version\";s:3:\"1.4\";s:3:\"url\";s:45:\"https://wordpress.org/themes/twentytwentytwo/\";s:7:\"package\";s:61:\"https://downloads.wordpress.org/theme/twentytwentytwo.1.4.zip\";s:8:\"requires\";s:3:\"5.9\";s:12:\"requires_php\";s:3:\"5.6\";}}s:12:\"translations\";a:0:{}}', 'no'),
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 (132, '_site_transient_timeout_browser_e3f8101c41b40572973227d0a64620d0', '1698418465', 'no'),
 (133, '_site_transient_browser_e3f8101c41b40572973227d0a64620d0', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:9:\"118.0.0.0\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
 (134, '_site_transient_timeout_php_check_3fde9d06ba9e4fd20d08658e6f30b792', '1698418466', 'no'),
@@ -413,10 +502,13 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 44-tuan/7-prev-next
 (138, '_site_transient_timeout_community-events-d41d8cd98f00b204e9800998ecf8427e', '1697856870', 'no'),
 (139, '_site_transient_community-events-d41d8cd98f00b204e9800998ecf8427e', 'a:4:{s:9:\"sandboxed\";b:0;s:5:\"error\";N;s:8:\"location\";a:1:{s:2:\"ip\";b:0;}s:6:\"events\";a:0:{}}', 'no'),
 (140, '_transient_timeout_feed_9bbd59226dc36b9b26cd43f15694c5c3', '1697856871', 'no');
@@ -435,12 +527,17 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (149, '_transient_dash_v2_88ae138922fe95674369b1cb3d215a2b', '<div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://wordpress.org/news/2023/10/state-of-the-word-2023/\'>State of the Word 2023 – Save the Date</a></li><li><a class=\'rsswidget\' href=\'https://wordpress.org/news/2023/10/a-new-wordpress-showcase/\'>A New WordPress Showcase</a></li></ul></div><div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://dothewoo.io/do-the-woo-podcast-hits-episode-400/\'>Do The Woo Community: Do the Woo Podcast Hits Episode 400</a></li><li><a class=\'rsswidget\' href=\'https://wptavern.com/state-of-the-word-2023-will-broadcast-live-from-madrid-on-december-11\'>WPTavern: State of the Word 2023 Will Broadcast Live from Madrid on December 11</a></li><li><a class=\'rsswidget\' href=\'https://wptavern.com/wordpress-relaunches-showcase-powered-by-blocks\'>WPTavern: WordPress Relaunches Showcase Powered by Blocks</a></li></ul></div>', 'no'),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 16-Hoan/3-footer
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 (152, 'finished_updating_comment_type', '1', 'yes'),
 (153, 'current_theme', 'Twenty Twenty-One', 'yes'),
 (154, 'theme_mods_twentytwentyone', 'a:3:{i:0;b:0;s:18:\"nav_menu_locations\";a:0:{}s:18:\"custom_css_post_id\";i:-1;}', 'yes'),
@@ -448,6 +545,9 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 (156, 'category_children', 'a:0:{}', 'yes');
 =======
 (162, '_site_transient_timeout_php_check_f9b25a35946393ab2b3328e72e3e778a', '1698582179', 'no'),
@@ -475,6 +575,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (213, '_site_transient_timeout_theme_roots', '1698075136', 'no'),
 (214, '_site_transient_theme_roots', 'a:3:{s:15:\"twentytwentyone\";s:7:\"/themes\";s:17:\"twentytwentythree\";s:7:\"/themes\";s:15:\"twentytwentytwo\";s:7:\"/themes\";}', 'no'),
 (215, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1698073339;s:8:\"response\";a:1:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:3:\"5.3\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:54:\"https://downloads.wordpress.org/plugin/akismet.5.3.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:60:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=2818463\";s:2:\"1x\";s:60:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=2818463\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:63:\"https://ps.w.org/akismet/assets/banner-1544x500.png?rev=2900731\";s:2:\"1x\";s:62:\"https://ps.w.org/akismet/assets/banner-772x250.png?rev=2900731\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:3:\"5.8\";s:6:\"tested\";s:5:\"6.3.2\";s:12:\"requires_php\";s:6:\"5.6.20\";}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:1:{s:9:\"hello.php\";O:8:\"stdClass\":10:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:5:\"1.7.2\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/hello-dolly.1.7.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=2052855\";s:2:\"1x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=2052855\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:67:\"https://ps.w.org/hello-dolly/assets/banner-1544x500.jpg?rev=2645582\";s:2:\"1x\";s:66:\"https://ps.w.org/hello-dolly/assets/banner-772x250.jpg?rev=2052855\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:3:\"4.6\";}}s:7:\"checked\";a:2:{s:19:\"akismet/akismet.php\";s:3:\"5.2\";s:9:\"hello.php\";s:5:\"1.7.2\";}}', 'no');
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 (156, 'category_children', 'a:0:{}', 'yes');
@@ -482,10 +583,14 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 =======
 (156, 'category_children', 'a:0:{}', 'yes');
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -499,6 +604,12 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 =======
 -- Cấu trúc bảng cho bảng `wp_postmeta`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Cấu trúc bảng cho bảng `wp_postmeta`
+=======
+-- Table structure for table `wp_postmeta`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 CREATE TABLE `wp_postmeta` (
@@ -512,6 +623,7 @@ CREATE TABLE `wp_postmeta` (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `wp_postmeta`
 =======
 -- Dumping data for table `wp_postmeta`
@@ -522,6 +634,12 @@ CREATE TABLE `wp_postmeta` (
 =======
 -- Đang đổ dữ liệu cho bảng `wp_postmeta`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Đang đổ dữ liệu cho bảng `wp_postmeta`
+=======
+-- Dumping data for table `wp_postmeta`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
@@ -529,6 +647,9 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 (2, 3, '_wp_page_template', 'default');
 =======
 (2, 3, '_wp_page_template', 'default'),
@@ -539,6 +660,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (10, 13, '_edit_lock', '1698059271:1'),
 (11, 13, '_wp_trash_meta_status', 'publish'),
 (12, 13, '_wp_trash_meta_time', '1698059285');
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 (2, 3, '_wp_page_template', 'default');
@@ -546,10 +668,14 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 =======
 (2, 3, '_wp_page_template', 'default');
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -563,6 +689,12 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 =======
 -- Cấu trúc bảng cho bảng `wp_posts`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Cấu trúc bảng cho bảng `wp_posts`
+=======
+-- Table structure for table `wp_posts`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 CREATE TABLE `wp_posts` (
@@ -595,6 +727,7 @@ CREATE TABLE `wp_posts` (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `wp_posts`
 =======
 -- Dumping data for table `wp_posts`
@@ -605,6 +738,12 @@ CREATE TABLE `wp_posts` (
 =======
 -- Đang đổ dữ liệu cho bảng `wp_posts`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Đang đổ dữ liệu cho bảng `wp_posts`
+=======
+-- Dumping data for table `wp_posts`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
@@ -615,6 +754,9 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 (5, 1, '2023-10-20 14:54:27', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2023-10-20 14:54:27', '0000-00-00 00:00:00', '', 0, 'http://localhost:8080/nhom-L-wp/?p=5', 0, 'post', '', 0);
 =======
 (5, 1, '2023-10-20 14:54:27', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2023-10-20 14:54:27', '0000-00-00 00:00:00', '', 0, 'http://localhost:8080/nhom-L-wp/?p=5', 0, 'post', '', 0),
@@ -626,6 +768,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (11, 1, '2023-10-23 11:02:58', '2023-10-23 11:02:58', '<!-- wp:paragraph -->\n<p><em>Theo khảo sát của VietnamWorks về ngành công nghệ thông tin (CNTT) ở Việt Nam, trong 3 năm qua, số lượng công việc ngành CNTT đã tăng trung bình 47%/năm.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Tuy nhiên, số lượng nhân sự ngành này lại chỉ tăng ở mức trung bình 8% dẫn đến việc thiếu hụt nghiêm trọng nhân lực trong lĩnh vực này. Nguyên nhân chính được đưa ra là do số lượng doanh nghiệp tuyển dụng trong ngành CNTT đã tăng 69% từ năm 2012. Đặc biệt, số lượng công ty phần mềm đã tăng đến 124% chỉ trong vòng 4 năm. Khảo sát cũng cho thấy nếu cứ tiếp tục tăng trưởng nhân lực CNTT ở mức 8% như hiện nay, Việt Nam sẽ thiếu hụt khoảng 78.000 nhân lực CNTT mỗi năm và đến năm 2020 sẽ thiếu hơn 500.000 nhân lực CNTT.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>​Dự báo trong 2 năm 2017 và 2018, các cơ sở đào tạo trong cả nước sẽ cho \"ra lò\" khoảng 80.000 nhân lực CNTT, so với nhu cầu tính đến cuối năm 2018, Việt Nam vẫn còn thiếu khoảng 70.000 nhân lực cho lĩnh vực này.</p>\n<!-- /wp:paragraph -->', 'Khan hiếm nhân lực công nghệ thông tin', '', 'publish', 'open', 'open', '', 'khan-hiem-nhan-luc-cong-nghe-thong-tin', '', '', '2023-10-23 11:02:58', '2023-10-23 11:02:58', '', 0, 'http://localhost/nhom-L-wp/?p=11', 0, 'post', '', 0),
 (12, 1, '2023-10-23 11:02:58', '2023-10-23 11:02:58', '<!-- wp:paragraph -->\n<p><em>Theo khảo sát của VietnamWorks về ngành công nghệ thông tin (CNTT) ở Việt Nam, trong 3 năm qua, số lượng công việc ngành CNTT đã tăng trung bình 47%/năm.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Tuy nhiên, số lượng nhân sự ngành này lại chỉ tăng ở mức trung bình 8% dẫn đến việc thiếu hụt nghiêm trọng nhân lực trong lĩnh vực này. Nguyên nhân chính được đưa ra là do số lượng doanh nghiệp tuyển dụng trong ngành CNTT đã tăng 69% từ năm 2012. Đặc biệt, số lượng công ty phần mềm đã tăng đến 124% chỉ trong vòng 4 năm. Khảo sát cũng cho thấy nếu cứ tiếp tục tăng trưởng nhân lực CNTT ở mức 8% như hiện nay, Việt Nam sẽ thiếu hụt khoảng 78.000 nhân lực CNTT mỗi năm và đến năm 2020 sẽ thiếu hơn 500.000 nhân lực CNTT.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>​Dự báo trong 2 năm 2017 và 2018, các cơ sở đào tạo trong cả nước sẽ cho \"ra lò\" khoảng 80.000 nhân lực CNTT, so với nhu cầu tính đến cuối năm 2018, Việt Nam vẫn còn thiếu khoảng 70.000 nhân lực cho lĩnh vực này.</p>\n<!-- /wp:paragraph -->', 'Khan hiếm nhân lực công nghệ thông tin', '', 'inherit', 'closed', 'closed', '', '11-revision-v1', '', '', '2023-10-23 11:02:58', '2023-10-23 11:02:58', '', 11, 'http://localhost/nhom-L-wp/?p=12', 0, 'revision', '', 0),
 (13, 1, '2023-10-23 11:08:05', '2023-10-23 11:08:05', '{\n    \"widget_block[4]\": {\n        \"value\": {\n            \"raw_instance\": {\n                \"content\": \"<!-- wp:group -->\\n<div class=\\\"wp-block-group\\\"><!-- wp:heading -->\\n<h2 class=\\\"wp-block-heading\\\">Recent Comments</h2>\\n<!-- /wp:heading -->\\n\\n<!-- wp:latest-comments {\\\"displayAvatar\\\":false,\\\"displayDate\\\":false,\\\"displayExcerpt\\\":false} /--></div>\\n<!-- /wp:group -->\"\n            }\n        },\n        \"type\": \"option\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2023-10-23 11:07:51\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '2b6f60f9-af69-4256-ba64-5e7aedc7edb1', '', '', '2023-10-23 11:08:05', '2023-10-23 11:08:05', '', 0, 'http://localhost/nhom-L-wp/?p=13', 0, 'customize_changeset', '', 0);
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 (5, 1, '2023-10-20 14:54:27', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2023-10-20 14:54:27', '0000-00-00 00:00:00', '', 0, 'http://localhost:8080/nhom-L-wp/?p=5', 0, 'post', '', 0);
@@ -633,10 +776,14 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 =======
 (5, 1, '2023-10-20 14:54:27', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2023-10-20 14:54:27', '0000-00-00 00:00:00', '', 0, 'http://localhost:8080/nhom-L-wp/?p=5', 0, 'post', '', 0);
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -650,6 +797,12 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 =======
 -- Cấu trúc bảng cho bảng `wp_termmeta`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Cấu trúc bảng cho bảng `wp_termmeta`
+=======
+-- Table structure for table `wp_termmeta`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 CREATE TABLE `wp_termmeta` (
@@ -665,6 +818,7 @@ CREATE TABLE `wp_termmeta` (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `wp_terms`
 =======
 -- Table structure for table `wp_terms`
@@ -675,6 +829,12 @@ CREATE TABLE `wp_termmeta` (
 =======
 -- Cấu trúc bảng cho bảng `wp_terms`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Cấu trúc bảng cho bảng `wp_terms`
+=======
+-- Table structure for table `wp_terms`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 CREATE TABLE `wp_terms` (
@@ -688,10 +848,13 @@ CREATE TABLE `wp_terms` (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 44-tuan/7-prev-next
 -- Đang đổ dữ liệu cho bảng `wp_terms`
 --
 
@@ -699,6 +862,9 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 (1, 'Uncategorized', 'uncategorized', 0);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 =======
 -- Dumping data for table `wp_terms`
 --
@@ -709,15 +875,20 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 (3, 'Sức khỏe', 'suc-khoe', 0),
 (4, 'Đời sống', 'doi-song', 0),
 (5, 'Du lịch', 'du-lich', 0);
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -731,6 +902,12 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 =======
 -- Cấu trúc bảng cho bảng `wp_term_relationships`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Cấu trúc bảng cho bảng `wp_term_relationships`
+=======
+-- Table structure for table `wp_term_relationships`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 CREATE TABLE `wp_term_relationships` (
@@ -743,10 +920,13 @@ CREATE TABLE `wp_term_relationships` (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 44-tuan/7-prev-next
 -- Đang đổ dữ liệu cho bảng `wp_term_relationships`
 --
 
@@ -754,6 +934,9 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (1, 1, 0);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 =======
 -- Dumping data for table `wp_term_relationships`
 --
@@ -763,15 +946,20 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (7, 2, 0),
 (9, 2, 0),
 (11, 2, 0);
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -785,6 +973,12 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 =======
 -- Cấu trúc bảng cho bảng `wp_term_taxonomy`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Cấu trúc bảng cho bảng `wp_term_taxonomy`
+=======
+-- Table structure for table `wp_term_taxonomy`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 CREATE TABLE `wp_term_taxonomy` (
@@ -800,10 +994,13 @@ CREATE TABLE `wp_term_taxonomy` (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 44-tuan/7-prev-next
 -- Đang đổ dữ liệu cho bảng `wp_term_taxonomy`
 --
 
@@ -811,6 +1008,9 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (1, 1, 'category', '', 0, 1);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 =======
 -- Dumping data for table `wp_term_taxonomy`
 --
@@ -821,15 +1021,20 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (3, 3, 'category', '', 0, 0),
 (4, 4, 'category', '', 0, 0),
 (5, 5, 'category', '', 0, 0);
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -843,6 +1048,12 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 =======
 -- Cấu trúc bảng cho bảng `wp_usermeta`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Cấu trúc bảng cho bảng `wp_usermeta`
+=======
+-- Table structure for table `wp_usermeta`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 CREATE TABLE `wp_usermeta` (
@@ -856,6 +1067,7 @@ CREATE TABLE `wp_usermeta` (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `wp_usermeta`
 =======
 -- Dumping data for table `wp_usermeta`
@@ -866,6 +1078,12 @@ CREATE TABLE `wp_usermeta` (
 =======
 -- Đang đổ dữ liệu cho bảng `wp_usermeta`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Đang đổ dữ liệu cho bảng `wp_usermeta`
+=======
+-- Dumping data for table `wp_usermeta`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
@@ -887,6 +1105,9 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 (16, 1, 'session_tokens', 'a:1:{s:64:\"ca47bdc08590745ed4705fa44aa9b5791cf4c3cb15f3644c56bb71664b2cf2c7\";a:4:{s:10:\"expiration\";i:1697986463;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:111:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36\";s:5:\"login\";i:1697813663;}}'),
 (17, 1, 'wp_dashboard_quick_press_last_post_id', '5');
 =======
@@ -897,6 +1118,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (20, 1, 'wp_user-settings-time', '1698059171'),
 (21, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}'),
 (22, 1, 'metaboxhidden_nav-menus', 'a:2:{i:0;s:12:\"add-post_tag\";i:1;s:15:\"add-post_format\";}');
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 (16, 1, 'session_tokens', 'a:1:{s:64:\"ca47bdc08590745ed4705fa44aa9b5791cf4c3cb15f3644c56bb71664b2cf2c7\";a:4:{s:10:\"expiration\";i:1697986463;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:111:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36\";s:5:\"login\";i:1697813663;}}'),
@@ -906,10 +1128,14 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (16, 1, 'session_tokens', 'a:1:{s:64:\"ca47bdc08590745ed4705fa44aa9b5791cf4c3cb15f3644c56bb71664b2cf2c7\";a:4:{s:10:\"expiration\";i:1697986463;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:111:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36\";s:5:\"login\";i:1697813663;}}'),
 (17, 1, 'wp_dashboard_quick_press_last_post_id', '5');
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -923,6 +1149,12 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 =======
 -- Cấu trúc bảng cho bảng `wp_users`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Cấu trúc bảng cho bảng `wp_users`
+=======
+-- Table structure for table `wp_users`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 CREATE TABLE `wp_users` (
@@ -942,6 +1174,7 @@ CREATE TABLE `wp_users` (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `wp_users`
 =======
 -- Dumping data for table `wp_users`
@@ -952,6 +1185,12 @@ CREATE TABLE `wp_users` (
 =======
 -- Đang đổ dữ liệu cho bảng `wp_users`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Đang đổ dữ liệu cho bảng `wp_users`
+=======
+-- Dumping data for table `wp_users`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
@@ -961,10 +1200,13 @@ INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 44-tuan/7-prev-next
 -- Chỉ mục cho các bảng đã đổ
 --
 
@@ -972,17 +1214,24 @@ INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_
 -- Chỉ mục cho bảng `wp_commentmeta`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 =======
 -- Indexes for dumped tables
 --
 
 --
 -- Indexes for table `wp_commentmeta`
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_commentmeta`
   ADD PRIMARY KEY (`meta_id`),
@@ -990,6 +1239,7 @@ ALTER TABLE `wp_commentmeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1003,6 +1253,12 @@ ALTER TABLE `wp_commentmeta`
 =======
 -- Chỉ mục cho bảng `wp_comments`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Chỉ mục cho bảng `wp_comments`
+=======
+-- Indexes for table `wp_comments`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_comments`
   ADD PRIMARY KEY (`comment_ID`),
@@ -1016,6 +1272,7 @@ ALTER TABLE `wp_comments`
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `wp_links`
 =======
 -- Indexes for table `wp_links`
@@ -1026,12 +1283,19 @@ ALTER TABLE `wp_comments`
 =======
 -- Chỉ mục cho bảng `wp_links`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Chỉ mục cho bảng `wp_links`
+=======
+-- Indexes for table `wp_links`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_links`
   ADD PRIMARY KEY (`link_id`),
   ADD KEY `link_visible` (`link_visible`);
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1045,6 +1309,12 @@ ALTER TABLE `wp_links`
 =======
 -- Chỉ mục cho bảng `wp_options`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Chỉ mục cho bảng `wp_options`
+=======
+-- Indexes for table `wp_options`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_options`
   ADD PRIMARY KEY (`option_id`),
@@ -1052,6 +1322,7 @@ ALTER TABLE `wp_options`
   ADD KEY `autoload` (`autoload`);
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1065,6 +1336,12 @@ ALTER TABLE `wp_options`
 =======
 -- Chỉ mục cho bảng `wp_postmeta`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Chỉ mục cho bảng `wp_postmeta`
+=======
+-- Indexes for table `wp_postmeta`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_postmeta`
   ADD PRIMARY KEY (`meta_id`),
@@ -1072,6 +1349,7 @@ ALTER TABLE `wp_postmeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1085,6 +1363,12 @@ ALTER TABLE `wp_postmeta`
 =======
 -- Chỉ mục cho bảng `wp_posts`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Chỉ mục cho bảng `wp_posts`
+=======
+-- Indexes for table `wp_posts`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_posts`
   ADD PRIMARY KEY (`ID`),
@@ -1094,6 +1378,7 @@ ALTER TABLE `wp_posts`
   ADD KEY `post_author` (`post_author`);
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1107,6 +1392,12 @@ ALTER TABLE `wp_posts`
 =======
 -- Chỉ mục cho bảng `wp_termmeta`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Chỉ mục cho bảng `wp_termmeta`
+=======
+-- Indexes for table `wp_termmeta`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_termmeta`
   ADD PRIMARY KEY (`meta_id`),
@@ -1114,6 +1405,7 @@ ALTER TABLE `wp_termmeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1127,6 +1419,12 @@ ALTER TABLE `wp_termmeta`
 =======
 -- Chỉ mục cho bảng `wp_terms`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Chỉ mục cho bảng `wp_terms`
+=======
+-- Indexes for table `wp_terms`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_terms`
   ADD PRIMARY KEY (`term_id`),
@@ -1134,6 +1432,7 @@ ALTER TABLE `wp_terms`
   ADD KEY `name` (`name`(191));
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1147,12 +1446,19 @@ ALTER TABLE `wp_terms`
 =======
 -- Chỉ mục cho bảng `wp_term_relationships`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Chỉ mục cho bảng `wp_term_relationships`
+=======
+-- Indexes for table `wp_term_relationships`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_term_relationships`
   ADD PRIMARY KEY (`object_id`,`term_taxonomy_id`),
   ADD KEY `term_taxonomy_id` (`term_taxonomy_id`);
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1166,6 +1472,12 @@ ALTER TABLE `wp_term_relationships`
 =======
 -- Chỉ mục cho bảng `wp_term_taxonomy`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Chỉ mục cho bảng `wp_term_taxonomy`
+=======
+-- Indexes for table `wp_term_taxonomy`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_term_taxonomy`
   ADD PRIMARY KEY (`term_taxonomy_id`),
@@ -1173,6 +1485,7 @@ ALTER TABLE `wp_term_taxonomy`
   ADD KEY `taxonomy` (`taxonomy`);
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1186,6 +1499,12 @@ ALTER TABLE `wp_term_taxonomy`
 =======
 -- Chỉ mục cho bảng `wp_usermeta`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Chỉ mục cho bảng `wp_usermeta`
+=======
+-- Indexes for table `wp_usermeta`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_usermeta`
   ADD PRIMARY KEY (`umeta_id`),
@@ -1193,6 +1512,7 @@ ALTER TABLE `wp_usermeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1206,6 +1526,12 @@ ALTER TABLE `wp_usermeta`
 =======
 -- Chỉ mục cho bảng `wp_users`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- Chỉ mục cho bảng `wp_users`
+=======
+-- Indexes for table `wp_users`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_users`
   ADD PRIMARY KEY (`ID`),
@@ -1217,10 +1543,13 @@ ALTER TABLE `wp_users`
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 44-tuan/7-prev-next
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
 
@@ -1228,22 +1557,30 @@ ALTER TABLE `wp_users`
 -- AUTO_INCREMENT cho bảng `wp_commentmeta`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 =======
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
 -- AUTO_INCREMENT for table `wp_commentmeta`
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_commentmeta`
   MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1257,11 +1594,18 @@ ALTER TABLE `wp_commentmeta`
 =======
 -- AUTO_INCREMENT cho bảng `wp_comments`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- AUTO_INCREMENT cho bảng `wp_comments`
+=======
+-- AUTO_INCREMENT for table `wp_comments`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_comments`
   MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1275,6 +1619,12 @@ ALTER TABLE `wp_comments`
 =======
 -- AUTO_INCREMENT cho bảng `wp_links`
 >>>>>>> 44-tuan/5-search-result
+=======
+-- AUTO_INCREMENT cho bảng `wp_links`
+=======
+-- AUTO_INCREMENT for table `wp_links`
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_links`
   MODIFY `link_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
@@ -1283,10 +1633,13 @@ ALTER TABLE `wp_links`
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 44-tuan/7-prev-next
 -- AUTO_INCREMENT cho bảng `wp_options`
 --
 ALTER TABLE `wp_options`
@@ -1308,6 +1661,9 @@ ALTER TABLE `wp_posts`
 -- AUTO_INCREMENT cho bảng `wp_termmeta`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 =======
 -- AUTO_INCREMENT for table `wp_options`
 --
@@ -1328,11 +1684,15 @@ ALTER TABLE `wp_posts`
 
 --
 -- AUTO_INCREMENT for table `wp_termmeta`
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_termmeta`
   MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
@@ -1341,10 +1701,13 @@ ALTER TABLE `wp_termmeta`
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 44-tuan/7-prev-next
 -- AUTO_INCREMENT cho bảng `wp_terms`
 --
 ALTER TABLE `wp_terms`
@@ -1366,6 +1729,9 @@ ALTER TABLE `wp_usermeta`
 -- AUTO_INCREMENT cho bảng `wp_users`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 44-tuan/7-prev-next
 =======
 -- AUTO_INCREMENT for table `wp_terms`
 --
@@ -1386,11 +1752,15 @@ ALTER TABLE `wp_usermeta`
 
 --
 -- AUTO_INCREMENT for table `wp_users`
+<<<<<<< HEAD
 >>>>>>> 16-Hoan/3-footer
 =======
 >>>>>>> 16-Hoan/4-search
 =======
 >>>>>>> 44-tuan/5-search-result
+=======
+>>>>>>> 31-Phong/8-comment
+>>>>>>> 44-tuan/7-prev-next
 --
 ALTER TABLE `wp_users`
   MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;

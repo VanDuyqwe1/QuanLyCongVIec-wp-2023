@@ -8,7 +8,6 @@
  */
 
 if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-<<<<<<< HEAD
     <div class="footer-widgets">
         <div class="container">
             <div class="row">
@@ -37,12 +36,4 @@ if ( is_active_sidebar( 'sidebar-3' ) ) : ?>
     </aside><!-- .widget-area -->
 
 <?php
-=======
-
-	<aside class="widget-area">
-		<?php dynamic_sidebar( 'sidebar-1' ); ?>
-	</aside><!-- .widget-area -->
-
-	<?php
->>>>>>> 44-tuan/5-search-result
 endif;
