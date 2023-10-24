@@ -22,6 +22,8 @@ get_header(); ?>
 	</header><!-- .page-header -->
 <?php endif; ?>
 
+
+
 <?php
 if ( have_posts() ) {
 
@@ -41,5 +43,6 @@ if ( have_posts() ) {
 	get_template_part( 'template-parts/content/content-none' );
 
 }
+get_template_part( 'template-parts/archive/archive-widgets' );
 
 get_footer();
