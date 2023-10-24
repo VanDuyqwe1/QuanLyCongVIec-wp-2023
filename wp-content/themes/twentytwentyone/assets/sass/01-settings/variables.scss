@@ -1,0 +1,21 @@
+
+$grey: #e7e7e7;
+$gray-light: #f8f8f8;
+$while: #fff;
+
+.w-mb-100{
+	@media only screen and (max-width: 991px) {
+		width: 100% !important;
+	}
+}
+
+.hover-menu{
+    &:hover{
+		background: $grey;
+	}
+}
+
+
+.bg-while{
+    background: $while;
+}
