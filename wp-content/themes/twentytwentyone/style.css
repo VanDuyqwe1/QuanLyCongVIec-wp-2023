@@ -3228,7 +3228,6 @@ table.wp-calendar-table caption {
   padding-right: 3rem;
 }
 .site-header .search, .site-header .user-circle {
-  padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
@@ -4796,6 +4795,9 @@ h1.page-title {
   display: none;
 }
 
+.home {
+  width: 100vw !important;
+}
 .home .widget-last-comment {
   margin-top: 2rem;
 }
@@ -4823,6 +4825,30 @@ h1.page-title {
 }
 .home .widget-last-comment .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta {
   display: none;
+}
+
+.widget-pages {
+  padding-left: 2rem;
+}
+
+.form-search .wp-block-search__label {
+  display: none;
+}
+.form-search .wp-block-search__input {
+  border: 1px solid var(--global--color-b2b2b2) !important;
+  border-radius: 5px;
+  color: var(--form--color-text);
+  max-width: inherit;
+  margin-right: 1rem;
+  height: 100% !important;
+}
+.form-search .wp-block-search__button {
+  border: 1px solid var(--global--color-b2b2b2) !important;
+  border-radius: 5px;
+  height: 100%;
+  background-color: var(--global--color-while);
+  font-size: var(--global--font-size-xs);
+  line-height: 70% !important;
 }
 
 /* Category 07 is for any utility classes that are not assigned to a specific component. */

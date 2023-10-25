@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template part for displaying post archives and search results
  *
@@ -34,7 +35,8 @@ $month = date("F", strtotime($date));
 					// 	$image_url = wp_get_attachment_image_url($image_id, 'full');
 					// 	echo '<img src="' . $image_url . '">';
 					// }
-					//?>
+					//
+					?>
 					<img src="http://fit.tdc.edu.vn/files/large/6ba9ad9cf9430f7862e80d77fe2b0fe3.jpg">
 				</div>
 			</div>
@@ -56,14 +58,5 @@ $month = date("F", strtotime($date));
 				</div>
 			</div>
 		</div>
-</div>
-
-
-<!-- <footer class="entry-footer default-max-width">
-			<?php //twenty_twenty_one_entry_meta_footer(); 
-			?>
-		</footer> -->
-<!-- .entry-footer -->
-
-</article><!-- #post-${ID} -->
+	</article><!-- #post-${ID} -->
 </div>

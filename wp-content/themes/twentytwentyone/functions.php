@@ -378,7 +378,7 @@ function twenty_twenty_one_widgets_init()
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__('comment', 'twentytwentyone'),
+			'name'          => esc_html__('Comment', 'twentytwentyone'),
 			'id'            => 'comment-1',
 			'description'   => esc_html__('Add widgets here to appear in your footer.', 'twentytwentyone'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -389,7 +389,7 @@ function twenty_twenty_one_widgets_init()
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__('archive', 'twentytwentyone'),
+			'name'          => esc_html__('Archive', 'twentytwentyone'),
 			'id'            => 'archive-1',
 			'description'   => esc_html__('Add widgets here to appear in your footer.', 'twentytwentyone'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -400,7 +400,7 @@ function twenty_twenty_one_widgets_init()
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__('comments', 'twentytwentyone'),
+			'name'          => esc_html__('Comments', 'twentytwentyone'),
 			'id'            => 'comments-1',
 			'description'   => esc_html__('Add widgets here to appear in your footer.', 'twentytwentyone'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -412,8 +412,44 @@ function twenty_twenty_one_widgets_init()
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer', 'twentytwentyone' ),
+			'name'          => esc_html__( 'Latest comment', 'twentytwentyone' ),
 			'id'            => 'sidebar-last-comment',
+			'description'   => esc_html__( 'Add widgets here to appear in your footer.', 'twentytwentyone' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Pages', 'twentytwentyone' ),
+			'id'            => 'sidebar-pages',
+			'description'   => esc_html__( 'Add widgets here to appear in your footer.', 'twentytwentyone' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Form search', 'twentytwentyone' ),
+			'id'            => 'sidebar-form-search',
+			'description'   => esc_html__( 'Add widgets here to appear in your footer.', 'twentytwentyone' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Login/out', 'twentytwentyone' ),
+			'id'            => 'sidebar-login-out',
 			'description'   => esc_html__( 'Add widgets here to appear in your footer.', 'twentytwentyone' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',

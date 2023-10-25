@@ -55,10 +55,12 @@ $header_class = $show_title ? 'site-title' : 'screen-reader-text';
 			</div>
 		</div>
 	</nav>
-	<form class="d-flex form-search" role="search">
-		<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-		<button class="btn bg-while" type="submit">Submit</button>
-	</form>
-	
-</div><!-- .site-branding -->
+	<?php
+	if (is_active_sidebar('sidebar-form-search')) : ?>
+		<div class="form-search">
+				<?php dynamic_sidebar('sidebar-form-search'); ?>
+		</div>
+	<?php
+	endif; ?>
 
+</div><!-- .site-branding -->

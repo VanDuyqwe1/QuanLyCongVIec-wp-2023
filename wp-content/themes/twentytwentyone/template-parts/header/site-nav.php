@@ -49,17 +49,23 @@ endif; ?>
 			<i class="fa fa-search text-center" aria-hidden="true"></i>Search
 		</a>
 	</li>
-	<li class="dropdown">
-		<a href="#" class="dropdown-toggle d-column user-circle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-			<i class="fa fa-user-circle-o text-center" aria-hidden="true"></i>
-			Account <span class="caret"></span>
+	<li class="dropdown d-column">
+		<i class="fa fa-user-circle-o text-center" aria-hidden="true"></i>
+		<a class="btn dropdown-toggle user-circle pt-0 pb-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+			Account
+
 		</a>
+		<span class="caret"></span>
 		<ul class="dropdown-menu">
-			<li><a href="#">Action</a></li>
-			<li><a href="#">Another action</a></li>
-			<li><a href="#">Something else here</a></li>
-			<li role="separator" class="divider"></li>
-			<li><a href="#">Separated link</a></li>
+			<li><a class="dropdown-item" href="#">Thông tin</a></li>
+			<li><a class="dropdown-item" href="#">Cài đặt</a></li>
+			<li><a class="dropdown-item" href="#">
+					<?php
+					// if (is_active_sidebar('sidebar-login-out')) : 
+					// 	dynamic_sidebar('sidebar-login-out');
+					// endif;
+					 ?>
+				</a></li>
 		</ul>
 	</li>
 </ul>
