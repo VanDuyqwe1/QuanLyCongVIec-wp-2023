@@ -55,7 +55,7 @@
 .wrapper {
     width: 800px;
   }
-  .box {
+  .p-archive-box {
     display: flex;
     flex-wrap: wrap;
     gap: 8px; 
@@ -82,13 +82,13 @@
     margin-left: 15%;
     margin-right: 10%;
 }
-  .box>* {
+  .p-archive-box>* {
     width: 100%;
     flex: 1 1 300px;
     border-bottom: 1px solid #e5e5e5;
     margin-right: -25px;
   }
-  .box::before{
+  .p-archive-box::before{
     content: "";
     width: 1px;
     height: 80%;

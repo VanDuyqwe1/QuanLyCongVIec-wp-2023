@@ -37,7 +37,7 @@ if (is_active_sidebar('archive-1')): ?>
                                     <div class="p-detail-archive">
                                         <h2 class="p-title-archive">Xem Nhiều</h2>
                                     </div>
-                                    <div class="box">
+                                    <div class="p-archive-box">
                                         <div class="p-box-archive"><span class="number-top-view">2</span>
                                             <h3 class="p-title">Tướng Trung Quốc: Một số nước cố tình làm thế giới hỗn loạn
                                             </h3>
@@ -70,7 +70,7 @@ if (is_active_sidebar('archive-1')): ?>
                                             <h3 class="p-title">Tướng Trung Quốc: Một số nước cố tình làm thế giới hỗn loạn
                                             </h3>
                                         </div>
-                                    
+
                                     </div>
                                 </div>
                                 <!-- <div class="col-6 box-border box-border-right ">
