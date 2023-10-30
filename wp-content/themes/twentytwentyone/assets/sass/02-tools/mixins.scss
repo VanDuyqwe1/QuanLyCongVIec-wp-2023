@@ -35,7 +35,7 @@
 
 		// Text colors
 		&:not(.has-text-color) {
-			// color: var(--global--color-background);
+			color: var(--global--color-background);
 
 			// Nested
 			.has-background & {
@@ -49,7 +49,7 @@
 
 		// Background-colors
 		&:not(.has-background) {
-			// background-color: var(--global--color-primary);
+			background-color: var(--global--color-primary);
 
 			// Nested
 			.has-background & {
