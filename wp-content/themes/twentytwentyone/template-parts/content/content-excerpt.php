@@ -21,29 +21,23 @@ $date = $post->post_date;
 $day = date("j", strtotime($date));
 $month = date("F", strtotime($date));
 
-// var_dump($post);
+// $post_image = wp_get_attachment_image_src( $post->ID, 'full', true );
+$post_image = wp_get_attachment_image_src( $post->ID, 'full', true );
+
 ?>
 
-<div class="wrap-post entry-content">
+<div class="wrap-post entry-content" id="search_result">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="row ">
 			<div class="col-md-5 w-mb-100">
 				<div class="top_news_block_thumb">
-					<?php
-					// $image_id = get_post_thumbnail_id();
-					// if ($image_id) {
-					// 	$image_url = wp_get_attachment_image_url($image_id, 'full');
-					// 	echo '<img src="' . $image_url . '">';
-					// }
-					//
-					?>
-					<img src="http://fit.tdc.edu.vn/files/large/6ba9ad9cf9430f7862e80d77fe2b0fe3.jpg">
+					<?php the_post_thumbnail( 'post-thumbnail' ); ?>
 				</div>
 			</div>
 			<div class="col-md-7 top_news_block_desc w-mb-100">
 				<div class="row">
 					<div class="col-3 topnewstime">
-						<span class="topnewsdate"><?php echo $post_date ?></span><br>
+						<span class="topnewsdate"><?php echo $post_date ?></span>
 						<span class="topnewsmonth">Tháng <?php echo $post_month ?></span><br>
 					</div>
 					<div class="col-9 shortdesc">

@@ -42,7 +42,7 @@ if (have_posts()) {
 		);
 		?>
 	</div><!-- .search-result-count -->
-	<div class="home row">
+	<div class="search-post row">
 		<div class="achive col-md-3">
 			<?php get_template_part('template-parts/page/pages'); ?>
 		</div>
