@@ -41,14 +41,24 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	 -->
+	 
+	 <!-- Phong -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/mycss2.css" type="text/css"
 		media="screen" />
+
+	 <!-- Duy -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/style-1-header.css" type="text/css"
 		media="screen" />
+
+	 <!-- Tuan -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/style-5-search-result.css" type="text/css"
 		media="screen" />
 
+	<!-- Hoan -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style-footer.css" type="text/css" media="screen" />
 	<?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
