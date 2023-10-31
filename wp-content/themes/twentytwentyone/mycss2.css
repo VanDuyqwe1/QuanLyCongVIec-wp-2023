@@ -127,11 +127,30 @@
     left: 0;
     bottom: 0;
   }
-  .p-comments-background{
+  .comment-list {
     background: #ffffff;
-    padding: 20px;
-    padding-top: 0px;
+    padding-bottom: 20px;
   }
+  .p-comments-background{
+    
+  }
+  .comment-respond{
+    background: #ffffff;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+  .p-font-icon{
+    font-size: 13px;
+    fill: #a5acb9;
+    margin-left: 5px;
+  }
+  .p-number-archive{
+    color: blue;
+    font-size: 1rem;
+  }
+  /* .bai8-css{
+    background-color: red;
+  } */
 /* .p-number{
     font-family: "Merriweather",serif;
     font-size: 48px;

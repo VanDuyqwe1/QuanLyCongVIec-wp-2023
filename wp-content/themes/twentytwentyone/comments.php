@@ -21,7 +21,8 @@ if (post_password_required()) {
 	return;
 }
 
-$twenty_twenty_one_comment_count = get_comments_number() + 1;
+// $twenty_twenty_one_comment_count = get_comments_number() + 1;
+$twenty_twenty_one_comment_count = get_comments_number();
 ?>
 <!-- <div id="comments" class=" comments-area default-max-width <?php echo get_option('show_avatars') ? 'show-avatars' : ''; ?>"> -->
 
