@@ -73,5 +73,16 @@ if (have_posts()) {
 			<?php get_template_part('template-parts/post/last-comment'); ?>
 		</div>
 	</div>
-<?php
-get_footer(); ?>
+	<?php
+
+	if (is_active_sidebar('sidebar-last-posts')) : ?>
+		<aside class="widget-last-posts">
+			<h4>Latest News</h4>
+			<div class="timeline">
+				<?php dynamic_sidebar('sidebar-last-posts'); ?>
+			</div>
+		</aside><!-- .widget-area -->
+	<?php
+	endif;
+
+	get_footer(); ?>

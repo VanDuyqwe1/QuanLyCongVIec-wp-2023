@@ -3,9 +3,15 @@
 }
 
 .form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+<<<<<<< HEAD
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
+=======
+    border: none;
+    outline: none;
+    box-shadow: none;
+>>>>>>> 44-tuan/15-last-posts
 }
 
 .search-result-info {

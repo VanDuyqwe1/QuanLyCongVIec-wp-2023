@@ -171,6 +171,10 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --global--color-777: #777;
   --global--color-428bca: #428bca;
   --global--color-0f8fc6: #0f8fc6;
+  --global--color-007bff: #007bff;
+  --global--color-22c0e8: #22c0e8;
+  --global--color-d4d9df: #d4d9df;
+
   /* Spacing */
   --global--spacing-unit: 20px;
   --global--spacing-measure: unset;
@@ -4777,7 +4781,7 @@ h1.page-title {
 }
 .widget a {
   color: var(--footer--color-link);
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-style: solid;
   text-decoration-color: currentColor;
 }

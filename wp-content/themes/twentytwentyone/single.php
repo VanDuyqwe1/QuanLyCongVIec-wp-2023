@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The template for displaying all single posts
  *
@@ -12,29 +11,24 @@
 
 get_header();
 
-$post = get_post();
-$post_date = get_the_date('d', $post->ID);
-$post_month = get_the_date('m', $post->ID);
-$post_year = get_the_date('y', $post->ID);
-
 /* Start the Loop */
-while (have_posts()) :
+while ( have_posts() ) :
 	the_post();
 
-	get_template_part('template-parts/content/content-single');
+	get_template_part( 'template-parts/content/content-single' );
 
-	if (is_attachment()) {
+	if ( is_attachment() ) {
 		// Parent post navigation.
 		the_post_navigation(
 			array(
 				/* translators: %s: Parent post link. */
-				'prev_text' => sprintf(__('<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'twentytwentyone'), '%title'),
+				'prev_text' => sprintf( __( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'twentytwentyone' ), '%title' ),
 			)
 		);
 	}
 
 	// If comments are open or there is at least one comment, load up the comment template.
-	if (comments_open() || get_comments_number()) {
+	if ( comments_open() || get_comments_number() ) {
 		comments_template();
 	}
 
@@ -107,4 +101,4 @@ while (have_posts()) :
 
 endwhile; // End of the loop.
 
-get_footer(); ?>
+get_footer();
