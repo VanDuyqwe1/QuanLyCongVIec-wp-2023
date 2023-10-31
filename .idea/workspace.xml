@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49c24601-b45c-4c36-bf5e-f3159f5421b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/style-detail.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/style-detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/style-detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/template-parts/content/content-single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwentyone/template-parts/content/content-single.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,26 +37,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-<<<<<<< HEAD
-    "last_opened_file_path": "C:/xampp/htdocs/nhom-L-wp",
-=======
-    "last_opened_file_path": "C:/xampp/htdocs/nhom-L-wp/wp-admin/images",
->>>>>>> 16-Hoan/6-detail
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.updates",
-    "vue.rearranger.settings.migration": "true"
+
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/nhom-L-wp/wp-admin/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\nhom-L-wp\wp-admin\images" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
