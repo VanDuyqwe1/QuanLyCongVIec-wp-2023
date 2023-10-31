@@ -127,8 +127,10 @@
     left: 0;
     bottom: 0;
   }
-  .p-backround-archive{
-    
+  .p-comments-background{
+    background: #ffffff;
+    padding: 20px;
+    padding-top: 0px;
   }
 /* .p-number{
     font-family: "Merriweather",serif;
