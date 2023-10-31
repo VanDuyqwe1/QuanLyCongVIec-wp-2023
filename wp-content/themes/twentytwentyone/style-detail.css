@@ -1,35 +1,49 @@
-.title {
-    max-width: var(--responsive--aligndefault-width);
-    margin-left: auto;
-    margin-right: auto;
+@import "style.css";
+/*.title {*/
+/*    max-width: var(--responsive--aligndefault-width);*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*}*/
+.entry-title-adjust {
+    font-family: 'Open Sans Condensed', sans-serif !important;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
+
 .headlinesdate {
     font-size: 16px;
     background: #f5ce31;
     border-radius: 50%;
-    padding: 10px 16px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    padding: 10px 17px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
+
 .headlinesdate .headlinesdm, .headlinesdate {
     float: left;
-    font-family: 'Prata', serif;
+    font-family: 'Prata', serif !important;
 }
+
 .headlinesday {
     border-bottom: 1px solid #000;
 }
+
 .headlinesdate .headlinesday, .headlines .headlinesmonth {
-    line-height: 1.7em;
 }
+
 .headlinesdate .headlinesyear {
     line-height: 3.5em;
     float: left;
     margin-left: 3px;
 }
+
 .overviewline {
     border-bottom: 1px solid #cecece;
     margin: 25px 0 15px;
     position: relative;
 }
+
 .overviewline:before {
     content: "";
     position: absolute;
@@ -41,6 +55,7 @@
     display: block;
     width: 0;
 }
+
 .overviewline:after {
     content: "";
     position: absolute;
@@ -53,8 +68,28 @@
     width: 0;
 }
 
-.singular .entry-header {
+.singular .entry-header-adjust {
     border-bottom: 0px solid var(--global--color-border) !important;
     padding-bottom: calc(0 * var(--global--spacing-vertical)) !important;
     margin-bottom: calc(0 * var(--global--spacing-vertical)) !important;
+}
+
+.entry-content-adjust {
+    text-align: justify;
+}
+
+.entry-content-adjust p {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.entry-content-adjust p:first-child {
+    font-style: italic;
+}
+
+.entry-footer-adjust {
+    width: 100%;
+    margin: 0 !important;
+    text-align: right;
 }
