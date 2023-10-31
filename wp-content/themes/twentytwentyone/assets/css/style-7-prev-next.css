@@ -1,0 +1,47 @@
+.navigation.post-navigation .nav-links {
+    flex-direction: column;
+    background-color: var(--global--color-white);
+}
+
+.navigation.post-navigation .nav-links .post-title {
+    font-size: var(--global--font-size-base) !important;
+}
+
+.navigation.post-navigation .nav-links .nav-previous,
+.navigation.post-navigation .nav-links .nav-next {
+    max-width: 100%;
+}
+
+.navigation.post-navigation .nav-links .date-right .headlinesdate,
+.navigation.post-navigation .nav-links .date-left .headlinesdate {
+    background: none;
+    box-shadow: none;
+}
+
+.navigation.post-navigation .nav-links .headlinestitle {
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navigation.post-navigation .nav-links .date-right .headlinesdate,
+.navigation.post-navigation .nav-links .date-left .headlinesdate {
+    font-size: var(--global--font-size-base) !important;
+}
+
+.navigation.post-navigation .nav-links .date-right .post-title,
+.navigation.post-navigation .nav-links .date-left .post-title {
+    font-weight: 350;
+    margin: 0 calc(24px + 0.25 * var(--global--spacing-unit));
+}
+
+.navigation.post-navigation .nav-links .date-right .post-title,
+.navigation.post-navigation .nav-links .date-left .post-title {
+    font-weight: 350;
+    margin: 0 calc(24px + 0.25 * var(--global--spacing-unit));
+}
+
+.navigation a:hover {
+    text-decoration-style: inherit !important;
+    text-underline-offset: 1px !important;
+}
