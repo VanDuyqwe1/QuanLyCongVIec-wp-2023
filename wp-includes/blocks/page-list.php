@@ -187,8 +187,10 @@ function block_core_page_list_render_nested_page_list( $open_submenus_on_click, 
 		}
 
 		$title      = wp_kses_post( $page['title'] );
-		// $image      = wp_kses_post( $page );
-		var_dump( $title );
+		$page_id = wp_kses_post( $page['page_id'] );
+		$thumbnail_image      = wp_get_attachment_image_src( get_post_thumbnail_id( $page_id ));
+		$thumbnail_content      = get_the_excerpt(  $page_id );
+		// var_dump( $thumbnail_content );
 		
 		$aria_label = sprintf(
 			/* translators: Accessibility text. %s: Parent page title. */
@@ -206,11 +208,8 @@ function block_core_page_list_render_nested_page_list( $open_submenus_on_click, 
 			
 				<div class="wpb_wrapper">
 					<a class="wp-block-pages-list__item__link' . esc_attr( $navigation_child_content_class ) . '" href="' . esc_url( $page['link'] ) . '"' . $aria_current . '>' . $title . '</a>
-					<hr>
-					<p>'. the_post_thumbnail( 'post-thumbnail' ) .'
-					</p>
-					<p>Trang bị cho sinh viên kiến thức và kỹ năng để trở thành nhà phát triển phần mềm chuyên
-						nghiệp.</p>
+					<div class="page_image">'. '<img src="' . $thumbnail_image[0] . '" alt="'. $title .'" />' .'</div>
+					<div class="page_content"><p> '. $thumbnail_content .'</p></div>
 				</div>
 					
 			';

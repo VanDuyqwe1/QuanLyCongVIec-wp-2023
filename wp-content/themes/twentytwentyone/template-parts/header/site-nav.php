@@ -77,7 +77,7 @@
 
 					</a>
 					<span class="caret"></span>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu menu-show">
 						<li><a class="dropdown-item h-100" href="#">Thông tin</a></li>
 						<li><a class="dropdown-item h-100" href="#">Cài đặt</a></li>
 						<li>

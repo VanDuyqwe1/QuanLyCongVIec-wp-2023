@@ -1,3 +1,7 @@
+
+.search-post .content.col-md-6 .wrap-post.entry-content:first-child{
+    margin-top: 0;
+}
 .search-post.row{
     margin: 0;
 }
