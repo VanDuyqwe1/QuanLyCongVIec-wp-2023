@@ -37,13 +37,11 @@
     float: left;
     margin-left: 3px;
 }
-
 .overviewline {
     border-bottom: 1px solid #cecece;
     margin: 25px 0 15px;
     position: relative;
 }
-
 .overviewline:before {
     content: "";
     position: absolute;
@@ -55,7 +53,6 @@
     display: block;
     width: 0;
 }
-
 .overviewline:after {
     content: "";
     position: absolute;

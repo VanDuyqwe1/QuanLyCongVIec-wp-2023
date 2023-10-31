@@ -924,7 +924,8 @@ body {
   font-weight: normal;
   color: var(--global--color-primary);
   text-align: right;
-  background-color: var(--global--color-background);
+  background: url(../twentytwentyone/images/bg_pattern.png) no-repeat;
+
 }
 
 button {

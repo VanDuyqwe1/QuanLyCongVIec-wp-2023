@@ -49,6 +49,8 @@
 	 <!-- Duy -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/style-1-header.css" type="text/css"
 		media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/style-12-last-comments.css" type="text/css"
+		media="screen" />
 
 	 <!-- Tuan -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/style-5-search-result.css" type="text/css"
