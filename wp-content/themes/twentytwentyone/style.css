@@ -170,7 +170,10 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --global--color-333: #333;
   --global--color-777: #777;
   --global--color-428bca: #428bca;
+<<<<<<< HEAD
   --global--color-0f8fc6: #0f8fc6;
+=======
+>>>>>>> 44-tuan/5-search-result
   /* Spacing */
   --global--spacing-unit: 20px;
   --global--spacing-measure: unset;
@@ -990,7 +993,11 @@ body {
   font-weight: normal;
   color: var(--global--color-primary);
   text-align: left;
+<<<<<<< HEAD
   background: url(../twentytwentyone/images/bg_pattern.png);
+=======
+  background-color: var(--global--color-background);
+>>>>>>> 44-tuan/5-search-result
 }
 
 button {
