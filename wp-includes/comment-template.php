@@ -2895,7 +2895,7 @@ function comment_form($args = array(), $post = null)
 
 				$submitField = sprintf(
 					$args['submit_field'],
-					'<div class="text-right"><button type="submit" id="submit" class="btn btn-primary">Share</button></div>',
+					'<button type="submit" id="submit" class="btn btn-primary bai8-css" style="color: white;background-color:#007bff;">Share</button>',
 					get_comment_id_fields($post_id)
 				);
 
@@ -2928,11 +2928,11 @@ function comment_form($args = array(), $post = null)
 								<div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
 									<div class="form-group">
 										<label class="sr-only" for="message">post</label>
-										<textarea class="form-control" id="message" rows="3" id="comment" name="comment" placeholder="What are you thinking..."></textarea>
+										<textarea class="form-control" id="message" rows="3" name="comment" placeholder="What are you thinking..." style="margin: 0px;border: 1px solid #d8d8d8;border-radius: 5px;"></textarea>
 									</div>
 								</div>
 							</div>
-							<div class="text-right">
+							<div class="text-right ">
 								<?php echo $filteredSubmitField; ?>
 							</div>
 						</div>

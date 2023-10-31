@@ -187,7 +187,9 @@ function block_core_page_list_render_nested_page_list( $open_submenus_on_click, 
 		}
 
 		$title      = wp_kses_post( $page['title'] );
-		$title      = wp_kses_post( $page['title'] );
+		// $image      = wp_kses_post( $page );
+		var_dump( $title );
+		
 		$aria_label = sprintf(
 			/* translators: Accessibility text. %s: Parent page title. */
 			__( '%s submenu' ),
@@ -202,14 +204,14 @@ function block_core_page_list_render_nested_page_list( $open_submenus_on_click, 
 		} else {
 			$markup .= '
 			
-						<div class="wpb_wrapper">
-							<a class="wp-block-pages-list__item__link' . esc_attr( $navigation_child_content_class ) . '" href="' . esc_url( $page['link'] ) . '"' . $aria_current . '>' . $title . '</a>
-							<hr>
-							<p><img class="img-responsive w-100" src="http://el.tdc.edu.vn/public/images/cong-nghe-thong-tin.png">
-							</p>
-							<p>Trang bị cho sinh viên kiến thức và kỹ năng để trở thành nhà phát triển phần mềm chuyên
-								nghiệp.</p>
-						</div>
+				<div class="wpb_wrapper">
+					<a class="wp-block-pages-list__item__link' . esc_attr( $navigation_child_content_class ) . '" href="' . esc_url( $page['link'] ) . '"' . $aria_current . '>' . $title . '</a>
+					<hr>
+					<p>'. the_post_thumbnail( 'post-thumbnail' ) .'
+					</p>
+					<p>Trang bị cho sinh viên kiến thức và kỹ năng để trở thành nhà phát triển phần mềm chuyên
+						nghiệp.</p>
+				</div>
 					
 			';
 			
