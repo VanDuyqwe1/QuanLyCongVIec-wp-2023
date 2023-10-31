@@ -1,0 +1,101 @@
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #007b5e !important;
+    padding: 24px 0;
+}
+#footer h3{
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+    font-weight: bold;
+}
+#footer .text-footer{
+    color: rgb(226, 226, 226);
+    font-weight: 400;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+    padding: 3px 0;
+    list-style: none;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size:25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+    font-size:30px;
+    margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul li a{
+    color:#ffffff;
+}
+#footer ul.social li a:hover{
+    color:#eeeeee;
+}
+#footer ul li, .widget-block ul li, .widget-area ol li {
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+#footer ul li:hover, .widget-block ul li:hover , .widget-area ol li:hover {
+    padding: 3px 0;
+    margin-left:5px;
+    font-weight:700!important;
+}
+#footer ul li a i{
+    margin-right: 5px;
+}
+
+@media (max-width:767px){
+    #footer h3 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.widget_block ul li a{
+    color: #fff;
+}
+
+.widget_block ul li a::before, .widget_block ol li a::before {
+    content: '»';
+    font-size: 26px;
+    font-weight: 300;
+    margin-right: 5px;
+}
+
+.widget_block ul li a:hover::before, .widget_block ol li a:hover::before{
+    font-weight: 700;
+}
+
+.widget_block h2{
+    padding-left: 10px;
+    border-left: 3px solid #fff;
+    color: #fff;
+}
+
+.widget ul li {
+     line-height: unset!important;
+}
+
+.widget-area {
+    margin-top: calc(1 * var(--global--spacing-vertical)) !important;
+}
