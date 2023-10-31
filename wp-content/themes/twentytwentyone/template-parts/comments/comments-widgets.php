@@ -14,7 +14,7 @@ global $wpdb;
 $table_name = $wpdb->prefix . 'comments';
 
 // Câu truy vấn SQL để lấy dữ liệu từ cột post_name
-$query = "SELECT comment_content,comment_author,comment_author_url FROM $table_name";
+$query = "SELECT comment_content,comment_author,comment_author_url FROM $table_name LIMIT 2";
 
 
 // Thực thi truy vấn và lấy kết quả
