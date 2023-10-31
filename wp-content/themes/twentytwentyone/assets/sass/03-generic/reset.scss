@@ -62,12 +62,11 @@ html {
 
 // body resets
 body {
-	font-size: var(--global--font-size-xs);
+	font-size: var(--global--font-size-base);
 	font-weight: normal;
 	color: var(--global--color-primary);
 	text-align: left;
-	// background-color: var(--global--color-background);
-	background: url(..twentytwentyone/images/bg_pattern.png) no-repeat;
+	background-color: var(--global--color-background);
 }
 
 

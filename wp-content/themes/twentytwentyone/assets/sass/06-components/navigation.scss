@@ -398,7 +398,7 @@
 		@include media(mobile) {
 			display: block;
 			font-family: var(--primary-nav--font-family);
-			font-size: var(--primary-nav--font-size-sub-menu);
+			font-size: var(--primary-nav--font-size);
 			font-weight: var(--primary-nav--font-weight);
 		}
 

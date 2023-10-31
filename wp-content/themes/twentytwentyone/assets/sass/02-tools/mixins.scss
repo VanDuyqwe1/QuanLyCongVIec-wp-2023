@@ -35,7 +35,7 @@
 
 		// Text colors
 		&:not(.has-text-color) {
-			// color: var(--global--color-background);
+			color: var(--global--color-background);
 
 			// Nested
 			.has-background & {
@@ -49,7 +49,7 @@
 
 		// Background-colors
 		&:not(.has-background) {
-			// background-color: var(--global--color-primary);
+			background-color: var(--global--color-primary);
 
 			// Nested
 			.has-background & {
@@ -97,24 +97,4 @@
 	&.is-selected > #{$container} > *:nth-last-child(2) {
 		margin-bottom: 0;
 	}
-}
-
-@mixin split_str($line_number) {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: $line_number;
-}
-
-@mixin maxWidth($breakpoint) {
-    @media only screen and (max-width: $breakpoint) {
-        @content;
-    }
-}
-
-@mixin minWidth($breakpoint) {
-    @media only screen and (min-width: $breakpoint) {
-        @content;
-    }
 }

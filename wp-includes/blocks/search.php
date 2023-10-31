@@ -134,7 +134,7 @@ function render_block_core_search( $attributes, $content, $block ) {
 
 		// Include the button element class.
 		$button_classes[] = wp_theme_get_element_class_name( 'button' );
-		$button           = new WP_HTML_Tag_Processor( sprintf( '<button type="submit" %s>%s</button>', $inline_styles['button'], $button_internal_markup ) );
+		$button           = new WP_HTML_Tag_Processor( sprintf( '<button type="submit" %s>%s</button>', $inline_styles['button'], 'Submit' ) );
 
 		if ( $button->next_tag() ) {
 			$button->add_class( implode( ' ', $button_classes ) );

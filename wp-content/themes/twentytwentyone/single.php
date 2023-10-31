@@ -39,12 +39,14 @@ while ( have_posts() ) :
 	$twentytwentyone_next_label     = esc_html__( 'Next post', 'twentytwentyone' );
 	$twentytwentyone_previous_label = esc_html__( 'Previous post', 'twentytwentyone' );
 
-	the_post_navigation(
-		array(
-			'next_text' => '<p class="meta-nav">' . $twentytwentyone_next_label . $twentytwentyone_next . '</p><p class="post-title">%title</p>',
-			'prev_text' => '<p class="meta-nav">' . $twentytwentyone_prev . $twentytwentyone_previous_label . '</p><p class="post-title">%title</p>',
-		)
-	);
+	// the_post_navigation(
+	// 	array(
+	// 		'next_text' => '<p class="meta-nav">' . $twentytwentyone_next_label . $twentytwentyone_next . '</p><p class="post-title">%title</p>',
+	// 		'prev_text' => '<p class="meta-nav">' . $twentytwentyone_prev . $twentytwentyone_previous_label . '</p><p class="post-title">%title</p>',
+	// 	)
+	// );
+	get_template_part( 'template-parts/post/prev-next-widgets' ); 
+
 endwhile; // End of the loop.
 
 get_footer();

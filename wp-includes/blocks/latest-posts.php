@@ -118,8 +118,17 @@ function render_block_core_latest_posts( $attributes ) {
 			);
 		}
 
+		// $list_items_markup .= sprintf(
+		// 	'<a class="wp-block-latest-posts__post-title" href="%1$s">%2$s</a>',
+		// 	esc_url( $post_link ),
+		// 	$title
+		// );
+
 		$list_items_markup .= sprintf(
-			'<a class="wp-block-latest-posts__post-title" href="%1$s">%2$s</a>',
+			'<div class="headlinestitle">
+				<a class="wp-block-latest-posts__post-title" href="%1$s">%2$s</a>
+			</div>
+			',
 			esc_url( $post_link ),
 			$title
 		);
@@ -140,9 +149,20 @@ function render_block_core_latest_posts( $attributes ) {
 
 		if ( isset( $attributes['displayPostDate'] ) && $attributes['displayPostDate'] ) {
 			$list_items_markup .= sprintf(
-				'<time datetime="%1$s" class="wp-block-latest-posts__post-date">%2$s</time>',
+				'
+				<div class="headlinesdate">
+					<div class="headlinesdm">
+						<div class="headlinesday">%3$s</div>
+						<div class="headlinesmonth">%4$s</div>
+					</div>
+					<div class="headlinesyear">%5$s</div>
+				</div>				
+				',
 				esc_attr( get_the_date( 'c', $post ) ),
-				get_the_date( '', $post )
+				get_the_date( '', $post ),
+				get_the_date('d', $post),
+				get_the_date('m', $post),
+				get_the_date('y', $post),
 			);
 		}
 

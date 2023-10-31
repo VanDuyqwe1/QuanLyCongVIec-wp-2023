@@ -2499,7 +2499,7 @@ function comment_form( $args = array(), $post = null ) {
 	$checked_attribute  = ( $html5 ? ' checked' : ' checked="checked"' );
 
 	// Identify required fields visually and create a message about the indicator.
-	$required_indicator = ' ' . wp_required_field_indicator();
+	$required_indicator = ' ' ;//. wp_required_field_indicator();
 	$required_text      = ' ' . wp_required_field_message();
 
 	$fields = array(
@@ -2579,8 +2579,8 @@ function comment_form( $args = array(), $post = null ) {
 		'comment_field'        => sprintf(
 			'<p class="comment-form-comment">%s %s</p>',
 			sprintf(
-				'<label for="comment">%s%s</label>',
-				_x( 'Comment', 'noun' ),
+				// '<label for="comment">%s%s</label>',
+				// _x( 'Comment', 'noun' ),
 				$required_indicator
 			),
 			'<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525"' . $required_attribute . '></textarea>'
@@ -2871,11 +2871,6 @@ function comment_form( $args = array(), $post = null ) {
 		?>
 	</div><!-- #respond -->
 	<?php
-
-	/**
-	 * Fires after the comment form.
-	 *
-	 * @since 3.0.0
-	 */
+	get_template_part( 'template-parts/comment/comment-widgets' );
 	do_action( 'comment_form_after' );
 }

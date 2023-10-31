@@ -156,13 +156,20 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --global--color-white: #fff;
   --global--color-white-50: rgba(255, 255, 255, 0.5);
   --global--color-white-90: rgba(255, 255, 255, 0.9);
-  --global--color-e7e7e7: #e7e7e7;
-  --global--color-428bca: #428bca;
+  --global--color-79aff5: #79aff5;
+  --global--color-b2b2b2: #b2b2b2;
   --global--color-primary: var(--global--color-dark-gray); /* Body text color, site title, footer text color. */
   --global--color-secondary: var(--global--color-gray); /* Headings */
   --global--color-primary-hover: var(--global--color-primary);
-  --global--color-background: var(--global--color-white-90); /* Mint, default body background */
+  --global--color-background: var(--global--color-green); /* Mint, default body background */
   --global--color-border: var(--global--color-primary); /* Used for borders (separators) */
+  --global--color-f8f8f8: #f8f8f8;
+  --global--color-e7e7e7: #e7e7e7;
+  --global--color-8e8d8b: #8e8d8b;
+  --global--color-ccc: #ccc;
+  --global--color-333: #333;
+  --global--color-777: #777;
+  --global--color-428bca: #428bca;
   /* Spacing */
   --global--spacing-unit: 20px;
   --global--spacing-measure: unset;
@@ -978,11 +985,11 @@ html {
 }
 
 body {
-  font-size: var(--global--font-size-xs);
+  font-size: var(--global--font-size-base);
   font-weight: normal;
   color: var(--global--color-primary);
   text-align: left;
-  background: url(..twentytwentyone/images/bg_pattern.png) no-repeat;
+  background-color: var(--global--color-background);
 }
 
 button {
@@ -1101,6 +1108,12 @@ input[type=datetime],
 input[type=datetime-local],
 input[type=color],
 .site textarea {
+  border: var(--form--border-width) solid var(--form--border-color);
+  border-radius: var(--form--border-radius);
+  color: var(--form--color-text);
+  line-height: var(--global--line-height-body);
+  padding: var(--form--spacing-unit);
+  margin: 0 2px;
   max-width: 100%;
 }
 input[type=text]:focus,
@@ -1562,6 +1575,15 @@ input[type=reset],
   padding: var(--button--padding-vertical) var(--button--padding-horizontal);
   text-decoration: none;
 }
+.site .button:not(:hover):not(:active):not(.has-text-color),
+button:not(:hover):not(:active):not(.has-text-color),
+input[type=submit]:not(:hover):not(:active):not(.has-text-color),
+input[type=reset]:not(:hover):not(:active):not(.has-text-color),
+.wp-block-search .wp-block-search__button:not(:hover):not(:active):not(.has-text-color),
+.wp-block-button .wp-block-button__link:not(:hover):not(:active):not(.has-text-color),
+.wp-block-file a.wp-block-file__button:not(:hover):not(:active):not(.has-text-color) {
+  color: var(--global--color-background);
+}
 .has-background .site .button:not(:hover):not(:active):not(.has-text-color),
 .has-background button:not(:hover):not(:active):not(.has-text-color),
 .has-background input[type=submit]:not(:hover):not(:active):not(.has-text-color),
@@ -1579,6 +1601,15 @@ input[type=reset],
 .has-background .wp-block-button .wp-block-button__link:not(:hover):not(:active):not(.has-text-color).has-background,
 .has-background .wp-block-file a.wp-block-file__button:not(:hover):not(:active):not(.has-text-color).has-background {
   color: var(--global--color-primary);
+}
+.site .button:not(:hover):not(:active):not(.has-background),
+button:not(:hover):not(:active):not(.has-background),
+input[type=submit]:not(:hover):not(:active):not(.has-background),
+input[type=reset]:not(:hover):not(:active):not(.has-background),
+.wp-block-search .wp-block-search__button:not(:hover):not(:active):not(.has-background),
+.wp-block-button .wp-block-button__link:not(:hover):not(:active):not(.has-background),
+.wp-block-file a.wp-block-file__button:not(:hover):not(:active):not(.has-background) {
+  background-color: var(--global--color-primary);
 }
 .has-background .site .button:not(:hover):not(:active):not(.has-background),
 .has-background button:not(:hover):not(:active):not(.has-background),
@@ -3207,36 +3238,33 @@ table.wp-calendar-table caption {
 /* Category 06 contains all "bigger" components which contain elements of the previous two categories like header, footer, page template, single template, comments section, archives, ... */
 .site-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   row-gap: var(--global--spacing-vertical);
-  background: #f8f8f8;
-  border-radius: 5px;
 }
 .wp-custom-logo .site-header {
   align-items: center;
 }
-.site-header .d-column {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
+@media only screen and (min-width: 482px) {
+  .site-header {
+    padding-top: calc(var(--global--spacing-vertical) / 0.75);
+  }
 }
-.site-header .ellipsis {
+@media only screen and (min-width: 822px) {
+  .site-header {
+    padding-top: calc(2.4 * var(--global--spacing-vertical));
+  }
+/* .site-header .ellipsis {
   padding-left: 3rem;
   padding-right: 3rem;
 }
 .site-header .search, .site-header .user-circle {
-  padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
+} */
 
 .site-branding {
   color: var(--branding--color-text);
   margin-right: 140px;
-}
-.site-branding input,
-.site-branding button {
-  border: 1px solid #ccc;
 }
 .site-branding:last-child {
   margin-right: 0;
@@ -3246,6 +3274,7 @@ table.wp-calendar-table caption {
 @media only screen and (min-width: 482px) {
   .site-branding {
     margin-right: initial;
+    margin-top: 4px;
   }
 }
 
@@ -3256,6 +3285,7 @@ table.wp-calendar-table caption {
   letter-spacing: normal;
   text-transform: var(--branding--title--text-transform);
   line-height: var(--global--line-height-heading);
+  margin-bottom: calc(var(--global--spacing-vertical) / 6);
 }
 .site-title a {
   color: currentColor;
@@ -3460,6 +3490,50 @@ table.wp-calendar-table caption {
 }
 .page-links .post-page-numbers:first-child {
   margin-left: 0;
+}
+
+.widget-prev-next {
+  max-width: var(--responsive--aligndefault-width);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--global--color-white);
+  padding: 20px 30px;
+}
+.widget-prev-next .headlinesdate {
+  float: left;
+  width: 15%;
+  min-width: 55px;
+  display: table-cell;
+  vertical-align: middle;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.widget-prev-next .headlinesdate .headlinesdm {
+  float: left;
+}
+.widget-prev-next .headlinesdate .headlinesdm .headlinesday {
+  border-bottom: 1px solid #000;
+}
+.widget-prev-next .headlinesdate .headlinesyear {
+  line-height: 3.5em;
+  float: left;
+  margin-left: 3px;
+}
+.widget-prev-next .headlinestitle {
+  display: table-cell;
+  vertical-align: middle;
+  width: 80%;
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.widget-prev-next .headlinestitle a {
+  font-size: var(--global--font-size-md);
+}
+.widget-prev-next ul li {
+  display: table;
+  width: 100%;
+  margin: 10px 0 !important;
 }
 
 .entry-title {
@@ -4253,7 +4327,7 @@ h1.page-title {
   .primary-navigation a {
     display: block;
     font-family: var(--primary-nav--font-family);
-    font-size: var(--primary-nav--font-size-sub-menu);
+    font-size: var(--primary-nav--font-size);
     font-weight: var(--primary-nav--font-weight);
   }
 }
@@ -4702,7 +4776,7 @@ h1.page-title {
 }
 .widget a {
   color: var(--footer--color-link);
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-style: solid;
   text-decoration-color: currentColor;
 }
@@ -4748,6 +4822,62 @@ h1.page-title {
 
 .widget_rss a.rsswidget .rss-widget-icon {
   display: none;
+}
+
+.home {
+  width: 100vw !important;
+}
+.home .widget-last-comment {
+  margin-top: 2rem;
+}
+.home .widget-last-comment .wp-block-heading {
+  font-weight: normal;
+  font-size: var(--global--font-size-lg);
+}
+.home .widget-last-comment .wp-block-heading::after {
+  content: "";
+  display: block;
+  width: 15%;
+  height: 2px;
+  background-color: var(--global--color-white-b2b2b2);
+}
+.home .widget-last-comment .wp-block-latest-comments__comment {
+  margin: 0;
+}
+.home .widget-last-comment .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt {
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--global--color-e7e7e7);
+}
+.home .widget-last-comment .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt p {
+  text-decoration: none;
+  color: var(--global--color-79aff5);
+}
+.home .widget-last-comment .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta {
+  display: none;
+}
+
+.widget-pages {
+  padding-left: 2rem;
+}
+
+.form-search .wp-block-search__label {
+  display: none;
+}
+.form-search .wp-block-search__input {
+  border: 1px solid var(--global--color-b2b2b2) !important;
+  border-radius: 5px;
+  color: var(--form--color-text);
+  max-width: inherit;
+  margin-right: 1rem;
+  height: 100% !important;
+}
+.form-search .wp-block-search__button {
+  border: 1px solid var(--global--color-b2b2b2) !important;
+  border-radius: 5px;
+  height: 100%;
+  background-color: var(--global--color-while);
+  font-size: var(--global--font-size-xs);
+  line-height: 70% !important;
 }
 
 /* Category 07 is for any utility classes that are not assigned to a specific component. */

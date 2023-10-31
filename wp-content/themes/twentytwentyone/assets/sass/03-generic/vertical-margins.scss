@@ -34,7 +34,7 @@
  * Site-main children wrappers
  * - Add double vertical margins here for clearer hierarchy
  */
-.site-main>* {
+.site-main > * {
 	margin-top: calc(3 * var(--global--spacing-vertical));
 	margin-bottom: calc(3 * var(--global--spacing-vertical));
 
@@ -84,62 +84,16 @@
 	margin-left: auto;
 }
 
-.wrap-post {
-	max-width: var(--responsive--aligndefault-width);
-	background-color: var(--global--color-white);
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-	.top_news_block_desc {
-		.topnewstime {
-			text-align: center;
-		}
-
-		.shortdesc {
-			border-left: 1px solid #666;
-		}
-
-		font-size: 0.9em;
-		padding: 15px;
-
-		.topnewsdate {
-			font-size: 3.1em;
-			line-height: 1em;
-		}
-	}
-
-	h2 {
-		line-height: .4;
-		color: var(--global--color-428bca);
-		text-transform: uppercase;
-
-		a {
-			font-size: var(--global--font-size-base);
-			text-decoration: none;
-			display: block;
-			line-height: 1.4;
-		}
-	}
-
-	.entry-content {
-		p {
-			@include split_str(4);
-		}
-	}
-}
-
 /*
  * Block & non-gutenberg content wrapper children
  * - Sets spacing-vertical margin logic
  */
-.site-main>article>*,
-// apply vertical margins to article level
-.site-main>.not-found>*,
-// apply vertical margins to article level
-.entry-content>*,
-[class*="inner-container"]>*,
-.wp-block-template-part>*,
-.wp-block-post-template :where(li > *) {
-	// using :where keeps specificity low.
+.site-main > article > *, // apply vertical margins to article level
+.site-main > .not-found > *, // apply vertical margins to article level
+.entry-content > *,
+[class*="inner-container"] > *,
+.wp-block-template-part > *,
+.wp-block-post-template :where(li > *) { // using :where keeps specificity low.
 
 	margin-top: calc(0.666 * var(--global--spacing-vertical));
 	margin-bottom: calc(0.666 * var(--global--spacing-vertical));
@@ -158,8 +112,8 @@
 	}
 }
 
-.site-footer>*,
-.widget-area>* {
+.site-footer > *,
+.widget-area > * {
 	margin-top: calc(0.666 * var(--global--spacing-vertical));
 	margin-bottom: calc(0.666 * var(--global--spacing-vertical));
 
@@ -174,11 +128,11 @@
  * - Sets spacing-unit margins
  */
 //.site-header > *, // Removed, to align site title and menu.
-.entry-header>*,
-.post-thumbnail>*,
-.page-content>*,
-.comment-content>*,
-.widget>* {
+.entry-header > *,
+.post-thumbnail > *,
+.page-content > *,
+.comment-content > *,
+.widget > * {
 	margin-top: var(--global--spacing-unit);
 	margin-bottom: var(--global--spacing-unit);
 
@@ -196,12 +150,12 @@
  * .entry-content children specific controls
  * - Adds special margin overrides for alignment utility classes
  */
-.entry-content>* {
+.entry-content > * {
 
 	&.alignleft,
 	&.alignright,
-	&.alignleft:first-child+*,
-	&.alignright:first-child+*,
+	&.alignleft:first-child + *,
+	&.alignright:first-child + *,
 	&.alignfull.has-background {
 		margin-top: 0;
 	}
@@ -212,8 +166,8 @@
 	}
 
 	/* Reset alignleft and alignright margins after alignfull */
-	&.alignfull+.alignleft,
-	&.alignfull+.alignright {
+	&.alignfull + .alignleft,
+	&.alignfull + .alignright {
 		margin-top: var(--global--spacing-vertical);
 	}
 }
