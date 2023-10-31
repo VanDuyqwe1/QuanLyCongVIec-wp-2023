@@ -14,7 +14,7 @@ global $wpdb;
 $table_name = $wpdb->prefix . 'posts';
 
 // Câu truy vấn SQL để lấy dữ liệu từ cột post_name
-$query = "SELECT post_title,id FROM $table_name LIMIT 8";
+$query = "SELECT post_title,id,post_parent FROM $table_name LIMIT 8";
 
 // Thực thi truy vấn và lấy kết quả
 $results = $wpdb->get_results($query);
@@ -38,6 +38,7 @@ if (is_active_sidebar('archive-1')): ?>
                                         foreach ($results as $result) {
                                             $meta_value = $result->post_title;
                                             $id = $result->id;
+                                            $post_parent =$result->post_parent;
                                             ?>
                                             <div class="p-box-archive"><span class="number-top-view">
                                                     <?php echo $id ?>
@@ -55,7 +56,5 @@ if (is_active_sidebar('archive-1')): ?>
 
                     </div>
                 </div>
-
-
                 <?php
 endif;

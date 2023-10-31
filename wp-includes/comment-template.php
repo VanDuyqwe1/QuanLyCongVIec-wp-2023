@@ -2723,241 +2723,241 @@ function comment_form($args = array(), $post = null)
 		 */
 		do_action('comment_form_before');
 		?>
-																									<div id="respond" class="<?php echo esc_attr($args['class_container']); ?>">
-																										<?php
-																										echo $args['title_reply_before'];
+																											<div id="respond" class="<?php echo esc_attr($args['class_container']); ?>">
+																												<?php
+																												echo $args['title_reply_before'];
 
-																										comment_form_title($args['title_reply'], $args['title_reply_to'], true, $post_id);
+																												comment_form_title($args['title_reply'], $args['title_reply_to'], true, $post_id);
 
-																										if (get_option('thread_comments')) {
-																											echo $args['cancel_reply_before'];
+																												if (get_option('thread_comments')) {
+																													echo $args['cancel_reply_before'];
 
-																											cancel_comment_reply_link($args['cancel_reply_link']);
+																													cancel_comment_reply_link($args['cancel_reply_link']);
 
-																											echo $args['cancel_reply_after'];
-																										}
-
-																										echo $args['title_reply_after'];
-
-																										if (get_option('comment_registration') && !is_user_logged_in()):
-
-																											echo $args['must_log_in'];
-																											/**
-																											 * Fires after the HTML-formatted 'must log in after' message in the comment form.
-																											 *
-																											 * @since 3.0.0
-																											 */
-																											do_action('comment_form_must_log_in_after');
-
-																										else:
-
-																											printf(
-																												'<form action="%s" method="post" id="%s" class="%s"%s>',
-																												esc_url($args['action']),
-																												esc_attr($args['id_form']),
-																												esc_attr($args['class_form']),
-																												($html5 ? ' novalidate' : '')
-																											);
-
-																											/**
-																											 * Fires at the top of the comment form, inside the form tag.
-																											 *
-																											 * @since 3.0.0
-																											 */
-																											do_action('comment_form_top');
-
-																											if (is_user_logged_in()):
-
-																												/**
-																												 * Filters the 'logged in' message for the comment form for display.
-																												 *
-																												 * @since 3.0.0
-																												 *
-																												 * @param string $args_logged_in The HTML for the 'logged in as [user]' message,
-																												 *                               the Edit profile link, and the Log out link.
-																												 * @param array  $commenter      An array containing the comment author's
-																												 *                               username, email, and URL.
-																												 * @param string $user_identity  If the commenter is a registered user,
-																												 *                               the display name, blank otherwise.
-																												 */
-																												echo apply_filters('comment_form_logged_in', $args['logged_in_as'], $commenter, $user_identity);
-
-																												/**
-																												 * Fires after the is_user_logged_in() check in the comment form.
-																												 *
-																												 * @since 3.0.0
-																												 *
-																												 * @param array  $commenter     An array containing the comment author's
-																												 *                              username, email, and URL.
-																												 * @param string $user_identity If the commenter is a registered user,
-																												 *                              the display name, blank otherwise.
-																												 */
-																												do_action('comment_form_logged_in_after', $commenter, $user_identity);
-
-																											else:
-
-																												echo $args['comment_notes_before'];
-
-																											endif;
-
-																											// Prepare an array of all fields, including the textarea.
-																											$comment_fields = array('comment' => $args['comment_field']) + (array) $args['fields'];
-
-																											/**
-																											 * Filters the comment form fields, including the textarea.
-																											 *
-																											 * @since 4.4.0
-																											 *
-																											 * @param array $comment_fields The comment fields.
-																											 */
-																											$comment_fields = apply_filters('comment_form_fields', $comment_fields);
-
-																											// Get an array of field names, excluding the textarea.
-																											$comment_field_keys = array_diff(array_keys($comment_fields), array('comment'));
-
-																											// Get the first and the last field name, excluding the textarea.
-																											$first_field = reset($comment_field_keys);
-																											$last_field = end($comment_field_keys);
-
-																											foreach ($comment_fields as $name => $field) {
-
-																												if ('comment' === $name) {
-
-																													/**
-																													 * Filters the content of the comment textarea field for display.
-																													 *
-																													 * @since 3.0.0
-																													 *
-																													 * @param string $args_comment_field The content of the comment textarea field.
-																													 */
-																													echo apply_filters('comment_form_field_comment', $field);
-
-																													echo $args['comment_notes_after'];
-
-																												} elseif (!is_user_logged_in()) {
-
-																													if ($first_field === $name) {
-																														/**
-																														 * Fires before the comment fields in the comment form, excluding the textarea.
-																														 *
-																														 * @since 3.0.0
-																														 */
-
-																													}
-
-																													/**
-																													 * Filters a comment form field for display.
-																													 *
-																													 * The dynamic portion of the hook name, `$name`, refers to the name
-																													 * of the comment form field.
-																													 *
-																													 * Possible hook names include:
-																													 *
-																													 *  - `comment_form_field_comment`
-																													 *  - `comment_form_field_author`
-																													 *  - `comment_form_field_email`
-																													 *  - `comment_form_field_url`
-																													 *  - `comment_form_field_cookies`
-																													 *
-																													 * @since 3.0.0
-																													 *
-																													 * @param string $field The HTML-formatted output of the comment form field.
-																													 */
-																													echo apply_filters("comment_form_field_{$name}", $field) . "\n";
-
-																													if ($last_field === $name) {
-																														/**
-																														 * Fires after the comment fields in the comment form, excluding the textarea.
-																														 *
-																														 * @since 3.0.0
-																														 */
-																														do_action('comment_form_after_fields');
-																													}
+																													echo $args['cancel_reply_after'];
 																												}
-																											}
 
-																											$submit_button = sprintf(
-																												$args['submit_button'],
-																												esc_attr($args['name_submit']),
-																												esc_attr($args['id_submit']),
-																												esc_attr($args['class_submit']),
-																												esc_attr($args['label_submit'])
-																											);
+																												echo $args['title_reply_after'];
 
-																											/**
-																											 * Filters the submit button for the comment form to display.
-																											 *
-																											 * @since 4.2.0
-																											 *
-																											 * @param string $submit_button HTML markup for the submit button.
-																											 * @param array  $args          Arguments passed to comment_form().
-																											 */
-																											$submit_button = apply_filters('comment_form_submit_button', $submit_button, $args);
+																												if (get_option('comment_registration') && !is_user_logged_in()):
 
-																											$submitField = sprintf(
-																												$args['submit_field'],
-																												'<button type="submit" id="submit" class="btn btn-primary bai8-css" style="color: white;background-color:#007bff;">Share</button>',
-																												get_comment_id_fields($post_id)
-																											);
+																													echo $args['must_log_in'];
+																													/**
+																													 * Fires after the HTML-formatted 'must log in after' message in the comment form.
+																													 *
+																													 * @since 3.0.0
+																													 */
+																													do_action('comment_form_must_log_in_after');
 
-																											/**
-																											 * Filters the submit field for the comment form to display.
-																											 *
-																											 * The submit field includes the submit button, hidden fields for the
-																											 * comment form, and any wrapper markup.
-																											 *
-																											 * @since 4.2.0
-																											 *
-																											 * @param string $submit_field HTML markup for the submit field.
-																											 * @param array  $args         Arguments passed to comment_form().
-																											 */
-																											$filteredSubmitField = apply_filters('comment_form_submit_field', $submitField, $args);
-																											?>
-																																						<div class="container">
-																																						<section class="card">
-																																							<div class="card-header">
-																																								<ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-																																									<li class="nav-item">
-																																										<a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab"
-																																											aria-controls="posts" aria-selected="true">
-																																											Make a post
-																																										</a>
-																																									</li>
-																																								</ul>
-																																							</div>
-																																							<div class="card-body">
-																																								<div class="tab-content" id="myTabContent">
-																																									<div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
-																																										<div class="form-group">
-																																											<label class="sr-only" for="message">post</label>
-																																											<textarea class="form-control" id="message" rows="3" name="comment" placeholder="What are you thinking..." style="margin: 0px;border: 1px solid #d8d8d8;border-radius: 5px;"></textarea>
+																												else:
+
+																													printf(
+																														'<form action="%s" method="post" id="%s" class="%s"%s>',
+																														esc_url($args['action']),
+																														esc_attr($args['id_form']),
+																														esc_attr($args['class_form']),
+																														($html5 ? ' novalidate' : '')
+																													);
+
+																													/**
+																													 * Fires at the top of the comment form, inside the form tag.
+																													 *
+																													 * @since 3.0.0
+																													 */
+																													do_action('comment_form_top');
+
+																													if (is_user_logged_in()):
+
+																														/**
+																														 * Filters the 'logged in' message for the comment form for display.
+																														 *
+																														 * @since 3.0.0
+																														 *
+																														 * @param string $args_logged_in The HTML for the 'logged in as [user]' message,
+																														 *                               the Edit profile link, and the Log out link.
+																														 * @param array  $commenter      An array containing the comment author's
+																														 *                               username, email, and URL.
+																														 * @param string $user_identity  If the commenter is a registered user,
+																														 *                               the display name, blank otherwise.
+																														 */
+																														echo apply_filters('comment_form_logged_in', $args['logged_in_as'], $commenter, $user_identity);
+
+																														/**
+																														 * Fires after the is_user_logged_in() check in the comment form.
+																														 *
+																														 * @since 3.0.0
+																														 *
+																														 * @param array  $commenter     An array containing the comment author's
+																														 *                              username, email, and URL.
+																														 * @param string $user_identity If the commenter is a registered user,
+																														 *                              the display name, blank otherwise.
+																														 */
+																														do_action('comment_form_logged_in_after', $commenter, $user_identity);
+
+																													else:
+
+																														echo $args['comment_notes_before'];
+
+																													endif;
+
+																													// Prepare an array of all fields, including the textarea.
+																													$comment_fields = array('comment' => $args['comment_field']) + (array) $args['fields'];
+
+																													/**
+																													 * Filters the comment form fields, including the textarea.
+																													 *
+																													 * @since 4.4.0
+																													 *
+																													 * @param array $comment_fields The comment fields.
+																													 */
+																													$comment_fields = apply_filters('comment_form_fields', $comment_fields);
+
+																													// Get an array of field names, excluding the textarea.
+																													$comment_field_keys = array_diff(array_keys($comment_fields), array('comment'));
+
+																													// Get the first and the last field name, excluding the textarea.
+																													$first_field = reset($comment_field_keys);
+																													$last_field = end($comment_field_keys);
+
+																													foreach ($comment_fields as $name => $field) {
+
+																														if ('comment' === $name) {
+
+																															/**
+																															 * Filters the content of the comment textarea field for display.
+																															 *
+																															 * @since 3.0.0
+																															 *
+																															 * @param string $args_comment_field The content of the comment textarea field.
+																															 */
+																															echo apply_filters('comment_form_field_comment', $field);
+
+																															echo $args['comment_notes_after'];
+
+																														} elseif (!is_user_logged_in()) {
+
+																															if ($first_field === $name) {
+																																/**
+																																 * Fires before the comment fields in the comment form, excluding the textarea.
+																																 *
+																																 * @since 3.0.0
+																																 */
+
+																															}
+
+																															/**
+																															 * Filters a comment form field for display.
+																															 *
+																															 * The dynamic portion of the hook name, `$name`, refers to the name
+																															 * of the comment form field.
+																															 *
+																															 * Possible hook names include:
+																															 *
+																															 *  - `comment_form_field_comment`
+																															 *  - `comment_form_field_author`
+																															 *  - `comment_form_field_email`
+																															 *  - `comment_form_field_url`
+																															 *  - `comment_form_field_cookies`
+																															 *
+																															 * @since 3.0.0
+																															 *
+																															 * @param string $field The HTML-formatted output of the comment form field.
+																															 */
+																															echo apply_filters("comment_form_field_{$name}", $field) . "\n";
+
+																															if ($last_field === $name) {
+																																/**
+																																 * Fires after the comment fields in the comment form, excluding the textarea.
+																																 *
+																																 * @since 3.0.0
+																																 */
+																																do_action('comment_form_after_fields');
+																															}
+																														}
+																													}
+
+																													$submit_button = sprintf(
+																														$args['submit_button'],
+																														esc_attr($args['name_submit']),
+																														esc_attr($args['id_submit']),
+																														esc_attr($args['class_submit']),
+																														esc_attr($args['label_submit'])
+																													);
+
+																													/**
+																													 * Filters the submit button for the comment form to display.
+																													 *
+																													 * @since 4.2.0
+																													 *
+																													 * @param string $submit_button HTML markup for the submit button.
+																													 * @param array  $args          Arguments passed to comment_form().
+																													 */
+																													$submit_button = apply_filters('comment_form_submit_button', $submit_button, $args);
+
+																													$submitField = sprintf(
+																														$args['submit_field'],
+																														'<button type="submit" id="submit" class="btn btn-primary bai8-css" style="color: white;background-color:#007bff;">Share</button>',
+																														get_comment_id_fields($post_id)
+																													);
+
+																													/**
+																													 * Filters the submit field for the comment form to display.
+																													 *
+																													 * The submit field includes the submit button, hidden fields for the
+																													 * comment form, and any wrapper markup.
+																													 *
+																													 * @since 4.2.0
+																													 *
+																													 * @param string $submit_field HTML markup for the submit field.
+																													 * @param array  $args         Arguments passed to comment_form().
+																													 */
+																													$filteredSubmitField = apply_filters('comment_form_submit_field', $submitField, $args);
+																													?>
+																																									<div class="container">
+																																									<section class="card">
+																																										<div class="card-header">
+																																											<ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+																																												<li class="nav-item">
+																																													<a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab"
+																																														aria-controls="posts" aria-selected="true">
+																																														Make a post
+																																													</a>
+																																												</li>
+																																											</ul>
 																																										</div>
-																																									</div>
+																																										<div class="card-body">
+																																											<div class="tab-content" id="myTabContent">
+																																												<div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+																																													<div class="form-group">
+																																														<label class="sr-only" for="message">post</label>
+																																														<textarea class="form-control" id="message" rows="3" name="comment" placeholder="What are you thinking..." style="margin: 0px;border: 1px solid #d8d8d8;border-radius: 5px;"></textarea>
+																																													</div>
+																																												</div>
+																																											</div>
+																																											<div class="text-right ">				
+																																											<?php echo $filteredSubmitField; ?>
+																																											</div>
+																																										</div>
+																																									</section>
 																																								</div>
-																																								<div class="text-right ">				
-																																								<?php echo $filteredSubmitField; ?>
-																																								</div>
-																																							</div>
-																																						</section>
-																																					</div>
-																																					<?php
-																																					/**
-																																					 * Fires at the bottom of the comment form, inside the closing form tag.
-																																					 *
-																																					 * @since 1.5.0
-																																					 *
-																																					 * @param int $post_id The post ID.
-																																					 */
-																																					do_action('comment_form', $post_id);
+																																								<?php
+																																								/**
+																																								 * Fires at the bottom of the comment form, inside the closing form tag.
+																																								 *
+																																								 * @since 1.5.0
+																																								 *
+																																								 * @param int $post_id The post ID.
+																																								 */
+																																								do_action('comment_form', $post_id);
 
-																																					echo '</form>';
+																																								echo '</form>';
 
-																										endif;
-																										?>
-																									</div><!-- #respond -->
-																									<?php
-																									// get_template_part('template-parts/comment/comment-widgets');
-																									do_action('comment_form_after');
+																												endif;
+																												?>
+																											</div><!-- #respond -->
+																											<?php
+																											// get_template_part('template-parts/comment/comment-widgets');
+																											do_action('comment_form_after');
 
 	}
 }
