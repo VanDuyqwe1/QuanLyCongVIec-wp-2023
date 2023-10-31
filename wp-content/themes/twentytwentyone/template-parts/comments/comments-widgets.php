@@ -14,7 +14,7 @@ global $wpdb;
 $table_name = $wpdb->prefix . 'comments';
 
 // Câu truy vấn SQL để lấy dữ liệu từ cột post_name
-$query = "SELECT comment_content,comment_author,comment_author_url FROM $table_name";
+$query = "SELECT comment_content,comment_author,comment_author_url FROM $table_name LIMIT 2";
 
 
 // Thực thi truy vấn và lấy kết quả
@@ -30,44 +30,49 @@ if (is_active_sidebar('comments-1')): ?>
         <div class="row">
             <div class="col-3">
             </div>
+
             <div class="col-9">
-                <div class="media p-comment-box">
-                    <div class="p-media-left">
-                        <a href="#">
-                            <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
-                        </a>
-                    </div>
-                    <div class="p-media-body">
-                        <h4 class="p-media-heading">
-                            <?php echo $comment_author ?>
-                        </h4>
-                        <p>
-                            <?php echo $post_comment ?>
-                        </p>
-                        <?php foreach ($results as $result) {
-                            $post_content = $result->comment_content;
-                            $comment_author = $result->comment_author;
-                            ?>
-                            <div class="media">
-                                <div class="p-media-left">
-                                    <a href="#">
-                                        <img class="img-responsive user-photo"
-                                            src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
-                                    </a>
+                <div class="p-comments-background">
+                    <div class="media p-comment-box">
+                        <div class="p-media-left">
+                            <a href="#">
+                                <img class="img-responsive user-photo"
+                                    src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                            </a>
+                        </div>
+                        <div class="p-media-body">
+                            <h4 class="p-media-heading">
+                                <?php echo $comment_author ?>
+                            </h4>
+                            <p>
+                                <?php echo $post_comment ?>
+                            </p>
+                            <?php foreach ($results as $result) {
+                                $post_content = $result->comment_content;
+                                $comment_author = $result->comment_author;
+                                ?>
+                                <div class="media">
+                                    <div class="p-media-left">
+                                        <a href="#">
+                                            <img class="img-responsive user-photo"
+                                                src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                                        </a>
+                                    </div>
+                                    <div class="p-media-body">
+                                        <h4 class="p-media-heading">
+                                            <?php echo $comment_author ?>
+                                        </h4>
+                                        <p>
+                                            <?php echo $post_content ?>
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="p-media-body">
-                                    <h4 class="p-media-heading">
-                                        <?php echo $comment_author ?>
-                                    </h4>
-                                    <p>
-                                        <?php echo $post_content ?>
-                                    </p>
-                                </div>
-                            </div>
-                        <?php } ?>
+                            <?php } ?>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     </div>
