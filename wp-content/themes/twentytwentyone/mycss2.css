@@ -139,6 +139,15 @@
     padding-bottom: 20px;
     margin: 0;
   }
+  .p-font-icon{
+    font-size: 13px;
+    fill: #a5acb9;
+    margin-left: 5px;
+  }
+  .p-number-archive{
+    color: blue;
+    font-size: 1rem;
+  }
   /* .bai8-css{
     background-color: red;
   } */
