@@ -9,7 +9,8 @@
  */
 
 $post = get_posts(array(
-    'numberposts'      => 8));
+    'numberposts'      => 8
+));
 
 global $wpdb;
 
@@ -29,37 +30,38 @@ if (is_active_sidebar('archive-1')) : ?>
         <div class="box-news">
             <div class="box-news-left">
                 <div class="row p-backround-archive">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="wrapper">
-                                <div class="p-detail-archive">
-                                    <h2 class="p-title-archive">Xem Nhiều</h2>
-                                </div>
-                                <div class="p-archive-box">
-                                    <?php
-                                    $id = 0;
-                                    foreach ($post as $result) {
-                                        $meta_value = $result->post_title;
-                                        $id += 1;
-                                        $post_parent = $result->comment_count;
-                                    ?>
-                                        <div class="p-box-archive"><span class="number-top-view">
-                                                <?php echo $id ?>
-                                            </span>
-                                            <h3 class="p-title">
-                                                <?php echo $meta_value ?> <svg class="p-font-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                                                    <path d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z" />
-                                                </svg> <a href="" class="p-number-archive"><?php echo $post_parent ?></a>
-                                            </h3>
-                                        </div>
-                                    <?php } ?>
-                                </div>
+                    <div class="d-flex">
+                        <div class="wrapper">
+                            <div class="p-detail-archive">
+                                <h2 class="p-title-archive">Xem Nhiều</h2>
                             </div>
-
+                            <div class="p-archive-box">
+                                <?php
+                                $count = 0;
+                                foreach ($post as $result) {
+                                    $post_url = get_permalink($result->ID);
+                                    $meta_value = $result->post_title;
+                                    $count += 1;
+                                    $post_parent = $result->comment_count;
+                                ?>
+                                    <div class="p-box-archive"><span class="number-top-view">
+                                            <?php echo $count ?>
+                                        </span>
+                                        <h3 class="p-title"><a href="<?php echo $post_url ?>"><?php echo $meta_value ?></a>
+                                            <svg class="p-font-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                                <path d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z" />
+                                            </svg> <a href="" class="p-number-archive"><?php echo $post_parent ?></a>
+                                        </h3>
+                                    </div>
+                                <?php } ?>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
+
             </div>
-        <?php
-    endif;
+        </div>
+    </div>
+<?php
+endif;

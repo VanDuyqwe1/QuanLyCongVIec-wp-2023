@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -16,7 +17,7 @@
 
 get_header(); ?>
 
-<?php if (is_home() && !is_front_page() && !empty(single_post_title('', false))): ?>
+<?php if (is_home() && !is_front_page() && !empty(single_post_title('', false))) : ?>
 	<header class="page-header alignwide">
 		<h1 class="page-title">
 			<?php single_post_title(); ?>
@@ -25,7 +26,11 @@ get_header(); ?>
 <?php endif; ?>
 
 <div class="home row w-100">
-	<div class="achive col-md-3"></div>
+	<div class="achive col-md-3">
+		<div>
+			<?php get_template_part('template-parts/archive/archive-widgets'); ?>
+		</div>
+	</div>
 	<div class="content col-md-6">
 		<?php
 		if (have_posts()) {
@@ -51,13 +56,14 @@ get_header(); ?>
 		<?php get_template_part('template-parts/post/last-comment'); ?>
 	</div>
 
-	<div>
-		<?php get_template_part('template-parts/archive/archive-widgets'); ?>
-	</div>
+	<!-- <div>
+		<?php //get_template_part('template-parts/archive/archive-widgets'); 
+		?>
+	</div> -->
 
 </div>
 
-<?php get_footer();?>
+<?php get_footer(); ?>
 
 <?php
 // if ( have_posts() ) {
