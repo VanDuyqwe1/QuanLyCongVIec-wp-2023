@@ -45,12 +45,13 @@ $twenty_twenty_one_comment_count = get_comments_number();
 			<?php endif; ?>
 		</h2><!-- .comments-title -->
 
-		<ol class="comment-list ">
+		<!-- <ol class="comment-list "> -->
 			<!-- hiển thị comments -->
 			<?php
-			get_template_part('template-parts/comments/comments-widgets');
+			//get_template_part('template-parts/comments/comments-widgets');
 			?>
-		</ol><!-- .comment-list -->
+		<!-- </ol> -->
+		<!-- .comment-list -->
 
 		<?php
 		the_comments_pagination(

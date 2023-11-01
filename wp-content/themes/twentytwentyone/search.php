@@ -64,13 +64,20 @@ if (have_posts()) {
 		twenty_twenty_one_the_posts_navigation();
 
 		// If no content, include the "No posts found" template.
-		} else {
-			get_template_part('template-parts/content/content-none');
-		}
+	} else {
+		get_template_part('template-parts/content/content-none');
+	}
 		?>
 		</div>
 		<div class="last-comment col-md-3">
-			<?php get_template_part('template-parts/post/last-comment'); ?>
+			<?php //get_template_part('template-parts/post/last-comment'); 
+			?>
+			<ol class="comment-list ">
+				<!-- hiển thị comments -->
+				<?php
+				get_template_part('template-parts/comments/comments-widgets');
+				?>
+			</ol><!-- .comment-list -->
 		</div>
 	</div>
 	<?php
