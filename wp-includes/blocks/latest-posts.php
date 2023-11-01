@@ -51,7 +51,7 @@ function render_block_core_latest_posts( $attributes ) {
 	$filter_latest_posts_excerpt_more = static function( $more ) use ( $attributes ) {
 		$use_excerpt = 'excerpt' === $attributes['displayPostContentRadio'];
 		/* translators: %1$s is a URL to a post, excerpt truncation character, default … */
-		return $use_excerpt ? sprintf( __( ' … <a href="%1$s" rel="noopener noreferrer">Read more</a>' ), esc_url( get_permalink() ) ) : $more;
+		return $use_excerpt ? sprintf( __( '<a href="%1$s" rel="noopener noreferrer">… </a>' ), esc_url( get_permalink() ) ) : $more;
 	};
 
 	add_filter( 'excerpt_more', $filter_latest_posts_excerpt_more );
@@ -118,8 +118,17 @@ function render_block_core_latest_posts( $attributes ) {
 			);
 		}
 
+		// $list_items_markup .= sprintf(
+		// 	'<a class="wp-block-latest-posts__post-title" href="%1$s">%2$s</a>',
+		// 	esc_url( $post_link ),
+		// 	$title
+		// );
+
 		$list_items_markup .= sprintf(
-			'<a class="wp-block-latest-posts__post-title" href="%1$s">%2$s</a>',
+			'<div class="headlinestitle-latest-post">
+				<a class="wp-block-latest-posts__post-title" href="%1$s">%2$s</a>
+			</div>
+			',
 			esc_url( $post_link ),
 			$title
 		);
@@ -140,9 +149,16 @@ function render_block_core_latest_posts( $attributes ) {
 
 		if ( isset( $attributes['displayPostDate'] ) && $attributes['displayPostDate'] ) {
 			$list_items_markup .= sprintf(
-				'<time datetime="%1$s" class="wp-block-latest-posts__post-date">%2$s</time>',
-				esc_attr( get_the_date( 'c', $post ) ),
-				get_the_date( '', $post )
+				'
+				<div class="headlinesdate-latest-post">
+					<div class="headlinesdm-latest-post">%3$s %4$s, %5$s</div>
+				</div>				
+				',
+				esc_attr( get_the_date( 'd M Y', $post ) ),
+				get_the_date( '', $post ),
+				get_the_date('d', $post),
+				get_the_date('F', $post),
+				get_the_date('Y', $post),
 			);
 		}
 

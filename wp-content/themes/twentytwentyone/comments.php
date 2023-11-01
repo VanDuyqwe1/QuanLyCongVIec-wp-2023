@@ -21,9 +21,10 @@ if (post_password_required()) {
 	return;
 }
 
-$twenty_twenty_one_comment_count = get_comments_number() + 1;
+// $twenty_twenty_one_comment_count = get_comments_number() + 1;
+$twenty_twenty_one_comment_count = get_comments_number();
 ?>
-<!-- <div id="comments" class=" comments-area default-max-width <?php echo get_option('show_avatars') ? 'show-avatars' : ''; ?>"> -->
+<!-- <div id="comments" class=" comments-area default-max-width <?php //echo get_option('show_avatars') ? 'show-avatars' : ''; ?>"> -->
 
 <div id="comments" class="<?php echo get_option('show_avatars') ? 'show-avatars' : ''; ?>">
 
@@ -80,7 +81,8 @@ $twenty_twenty_one_comment_count = get_comments_number() + 1;
 	<?php
 	comment_form(
 		array(
-			'title_reply' => esc_html__('Leave a comment', 'twentytwentyone'),
+			// 'title_reply' => esc_html__('', 'twentytwentyone'),
+			'title_reply' => esc_html__('', 'twentytwentyone'),
 			'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
 			'title_reply_after' => '</h2>',
 		)

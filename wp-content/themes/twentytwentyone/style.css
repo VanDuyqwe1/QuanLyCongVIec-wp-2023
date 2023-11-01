@@ -92,14 +92,6 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
  * Measure..............The width of a line of text, in characters.
  */
 /* Categories 01 to 03 are the basics. */
-.hover-menu:hover {
-  background: #e7e7e7;
-}
-
-.bg-while {
-  background: #fff;
-}
-
 /* Variables */
 :root {
   /* Font Family */
@@ -164,12 +156,25 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --global--color-white: #fff;
   --global--color-white-50: rgba(255, 255, 255, 0.5);
   --global--color-white-90: rgba(255, 255, 255, 0.9);
-  --global--color-e7e7e7: #e7e7e7;
+  --global--color-79aff5: #79aff5;
+  --global--color-b2b2b2: #b2b2b2;
   --global--color-primary: var(--global--color-dark-gray); /* Body text color, site title, footer text color. */
   --global--color-secondary: var(--global--color-gray); /* Headings */
   --global--color-primary-hover: var(--global--color-primary);
-  --global--color-background: var(--global--color-white); /* Mint, default body background */
+  --global--color-background: var(--global--color-green); /* Mint, default body background */
   --global--color-border: var(--global--color-primary); /* Used for borders (separators) */
+  --global--color-f8f8f8: #f8f8f8;
+  --global--color-e7e7e7: #e7e7e7;
+  --global--color-8e8d8b: #8e8d8b;
+  --global--color-ccc: #ccc;
+  --global--color-333: #333;
+  --global--color-777: #777;
+  --global--color-428bca: #428bca;
+  --global--color-0f8fc6: #0f8fc6;
+  --global--color-007bff: #007bff;
+  --global--color-22c0e8: #22c0e8;
+  --global--color-d4d9df: #d4d9df;
+
   /* Spacing */
   --global--spacing-unit: 20px;
   --global--spacing-measure: unset;
@@ -314,6 +319,20 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
     --heading--font-size-h2: 3rem;
   }
 }
+@media only screen and (max-width: 991px) {
+  .w-mb-100 {
+    width: 100% !important;
+  }
+}
+
+.hover-menu:hover {
+  background: #e7e7e7;
+}
+
+.bg-while {
+  background: #fff;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -333,7 +352,6 @@ html {
  */
 body {
   margin: 0;
-  background: url("../../../wp-admin/images/bg_pattern.png") repeat;
 }
 
 /**
@@ -783,6 +801,44 @@ template {
   margin-left: auto;
 }
 
+.wrap-post {
+  max-width: var(--responsive--aligndefault-width);
+  background-color: var(--global--color-white);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.wrap-post .top_news_block_desc {
+  font-size: 0.9em;
+  padding: 15px;
+}
+.wrap-post .top_news_block_desc .topnewstime {
+  text-align: center;
+}
+.wrap-post .top_news_block_desc .shortdesc {
+  border-left: 1px solid #666;
+}
+.wrap-post .top_news_block_desc .topnewsdate {
+  font-size: 3.1em;
+  line-height: 1em;
+}
+.wrap-post h2 {
+  line-height: 0.4;
+  color: var(--global--color-428bca);
+  text-transform: uppercase;
+}
+.wrap-post h2 a {
+  font-size: var(--global--font-size-base);
+  text-decoration: none;
+  display: block;
+  line-height: 1.4;
+}
+.wrap-post .entry-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
 /*
  * Block & non-gutenberg content wrapper children
  * - Sets spacing-vertical margin logic
@@ -826,7 +882,6 @@ template {
 
 .site-footer > *,
 .widget-area > * {
-  color: var(--global--color-white);
   margin-top: calc(0.666 * var(--global--spacing-vertical));
   margin-bottom: calc(0.666 * var(--global--spacing-vertical));
 }
@@ -935,11 +990,11 @@ html {
 }
 
 body {
-  font-size: var(--global--font-size-xs);
+  font-size: var(--global--font-size-base);
   font-weight: normal;
   color: var(--global--color-primary);
   text-align: left;
-  background-color: var(--global--color-background);
+  background: url(../twentytwentyone/images/bg_pattern.png);
 }
 
 button {
@@ -1058,6 +1113,12 @@ input[type=datetime],
 input[type=datetime-local],
 input[type=color],
 .site textarea {
+  border: var(--form--border-width) solid var(--form--border-color);
+  border-radius: var(--form--border-radius);
+  color: var(--form--color-text);
+  line-height: var(--global--line-height-body);
+  padding: var(--form--spacing-unit);
+  margin: 0 2px;
   max-width: 100%;
 }
 input[type=text]:focus,
@@ -1519,6 +1580,15 @@ input[type=reset],
   padding: var(--button--padding-vertical) var(--button--padding-horizontal);
   text-decoration: none;
 }
+.site .button:not(:hover):not(:active):not(.has-text-color),
+button:not(:hover):not(:active):not(.has-text-color),
+input[type=submit]:not(:hover):not(:active):not(.has-text-color),
+input[type=reset]:not(:hover):not(:active):not(.has-text-color),
+.wp-block-search .wp-block-search__button:not(:hover):not(:active):not(.has-text-color),
+.wp-block-button .wp-block-button__link:not(:hover):not(:active):not(.has-text-color),
+.wp-block-file a.wp-block-file__button:not(:hover):not(:active):not(.has-text-color) {
+  color: var(--global--color-background);
+}
 .has-background .site .button:not(:hover):not(:active):not(.has-text-color),
 .has-background button:not(:hover):not(:active):not(.has-text-color),
 .has-background input[type=submit]:not(:hover):not(:active):not(.has-text-color),
@@ -1536,6 +1606,15 @@ input[type=reset],
 .has-background .wp-block-button .wp-block-button__link:not(:hover):not(:active):not(.has-text-color).has-background,
 .has-background .wp-block-file a.wp-block-file__button:not(:hover):not(:active):not(.has-text-color).has-background {
   color: var(--global--color-primary);
+}
+.site .button:not(:hover):not(:active):not(.has-background),
+button:not(:hover):not(:active):not(.has-background),
+input[type=submit]:not(:hover):not(:active):not(.has-background),
+input[type=reset]:not(:hover):not(:active):not(.has-background),
+.wp-block-search .wp-block-search__button:not(:hover):not(:active):not(.has-background),
+.wp-block-button .wp-block-button__link:not(:hover):not(:active):not(.has-background),
+.wp-block-file a.wp-block-file__button:not(:hover):not(:active):not(.has-background) {
+  background-color: var(--global--color-primary);
 }
 .has-background .site .button:not(:hover):not(:active):not(.has-background),
 .has-background button:not(:hover):not(:active):not(.has-background),
@@ -3164,36 +3243,33 @@ table.wp-calendar-table caption {
 /* Category 06 contains all "bigger" components which contain elements of the previous two categories like header, footer, page template, single template, comments section, archives, ... */
 .site-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   row-gap: var(--global--spacing-vertical);
-  background: #f8f8f8;
-  border-radius: 5px;
 }
 .wp-custom-logo .site-header {
   align-items: center;
 }
-.site-header .d-column {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
+@media only screen and (min-width: 482px) {
+  .site-header {
+    padding-top: calc(var(--global--spacing-vertical) / 0.75);
+  }
 }
-.site-header .ellipsis {
+@media only screen and (min-width: 822px) {
+  .site-header {
+    padding-top: calc(2.4 * var(--global--spacing-vertical));
+  }
+/* .site-header .ellipsis {
   padding-left: 3rem;
   padding-right: 3rem;
 }
 .site-header .search, .site-header .user-circle {
-  padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
+} */
 
 .site-branding {
   color: var(--branding--color-text);
   margin-right: 140px;
-}
-.site-branding input,
-.site-branding button {
-  border: 1px solid #ccc;
 }
 .site-branding:last-child {
   margin-right: 0;
@@ -3203,6 +3279,7 @@ table.wp-calendar-table caption {
 @media only screen and (min-width: 482px) {
   .site-branding {
     margin-right: initial;
+    margin-top: 4px;
   }
 }
 
@@ -3213,6 +3290,7 @@ table.wp-calendar-table caption {
   letter-spacing: normal;
   text-transform: var(--branding--title--text-transform);
   line-height: var(--global--line-height-heading);
+  margin-bottom: calc(var(--global--spacing-vertical) / 6);
 }
 .site-title a {
   color: currentColor;
@@ -3318,14 +3396,9 @@ table.wp-calendar-table caption {
     justify-content: center;
   }
 }
-#colophon {
-  background-color: #007b5e;
-}
-
 .site-footer {
   padding-top: 0;
-  padding-bottom: 1rem;
-  max-width: none;
+  padding-bottom: calc(1.7 * var(--global--spacing-vertical));
 }
 .no-widgets .site-footer {
   margin-top: calc(6 * var(--global--spacing-vertical));
@@ -3338,10 +3411,11 @@ table.wp-calendar-table caption {
 
 .site-footer > .site-info {
   padding-top: var(--global--spacing-vertical);
-  color: var(--global--color-white);
+  color: var(--footer--color-text);
   font-family: var(--footer--font-family);
   font-size: var(--footer--font-size);
   line-height: var(--global--line-height-body);
+  border-top: 3px solid var(--global--color-border);
 }
 .site-footer > .site-info .site-name {
   text-transform: var(--branding--title--text-transform);
@@ -3369,10 +3443,10 @@ table.wp-calendar-table caption {
   }
 }
 .site-footer > .site-info a {
-  color: var(--global--color-white);
+  color: var(--footer--color-link);
 }
 .site-footer > .site-info a:link, .site-footer > .site-info a:visited, .site-footer > .site-info a:active {
-  color: var(--global--color-white);
+  color: var(--footer--color-link);
 }
 .site-footer > .site-info a:hover {
   color: var(--footer--color-link-hover);
@@ -3388,9 +3462,9 @@ table.wp-calendar-table caption {
 }
 
 .singular .entry-header {
-  /*border-bottom: 3px solid var(--global--color-border);*/
-  /*padding-bottom: calc(2 * var(--global--spacing-vertical));*/
-  /*margin-bottom: calc(3 * var(--global--spacing-vertical));*/
+  border-bottom: 3px solid var(--global--color-border);
+  padding-bottom: calc(2 * var(--global--spacing-vertical));
+  margin-bottom: calc(3 * var(--global--spacing-vertical));
 }
 
 .home .entry-header {
@@ -3423,6 +3497,50 @@ table.wp-calendar-table caption {
   margin-left: 0;
 }
 
+.widget-prev-next {
+  max-width: var(--responsive--aligndefault-width);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--global--color-white);
+  padding: 20px 30px;
+}
+.widget-prev-next .headlinesdate {
+  float: left;
+  width: 15%;
+  min-width: 55px;
+  display: table-cell;
+  vertical-align: middle;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.widget-prev-next .headlinesdate .headlinesdm {
+  float: left;
+}
+.widget-prev-next .headlinesdate .headlinesdm .headlinesday {
+  border-bottom: 1px solid #000;
+}
+.widget-prev-next .headlinesdate .headlinesyear {
+  line-height: 3.5em;
+  float: left;
+  margin-left: 3px;
+}
+.widget-prev-next .headlinestitle {
+  display: table-cell;
+  vertical-align: middle;
+  width: 80%;
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.widget-prev-next .headlinestitle a {
+  font-size: var(--global--font-size-md);
+}
+.widget-prev-next ul li {
+  display: table;
+  width: 100%;
+  margin: 10px 0 !important;
+}
+
 .entry-title {
   color: var(--entry-header--color);
   font-size: var(--entry-header--font-size);
@@ -3445,11 +3563,7 @@ table.wp-calendar-table caption {
 }
 
 .singular .entry-title {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.8em;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
+  font-size: var(--global--font-size-page-title);
 }
 
 h1.entry-title {
@@ -4218,7 +4332,7 @@ h1.page-title {
   .primary-navigation a {
     display: block;
     font-family: var(--primary-nav--font-family);
-    font-size: var(--primary-nav--font-size-sub-menu);
+    font-size: var(--primary-nav--font-size);
     font-weight: var(--primary-nav--font-weight);
   }
 }
@@ -4587,21 +4701,19 @@ h1.page-title {
 .comments-pagination .nav-links > * {
   font-size: var(--global--font-size-md);
 }
-.footer-widgets {
-  background-color: #007b5e;
-}
 
 .widget-area {
-  margin-top: calc(2 * var(--global--spacing-vertical));
+  margin-top: calc(6 * var(--global--spacing-vertical));
+  padding-bottom: calc(var(--global--spacing-vertical) / 3);
   color: var(--footer--color-text);
   font-size: var(--footer--font-size);
   font-family: var(--footer--font-family);
-  background-color: #007b5e;
 }
 @media only screen and (min-width: 652px) {
   .widget-area {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: calc(2 * var(--global--spacing-horizontal));
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -4626,22 +4738,6 @@ h1.page-title {
   display: table;
   clear: both;
 }
-
-.widget_block {
-  padding: 0 1rem;
-}
-
-.widget_block a {
-  color: white!important;
-  text-decoration: none!important;
-}
-
-.widget_block a:before {
-  content:"»";
-  margin:5px;
-  font-size: 1.5rem;
-}
-
 
 .widget h1,
 .widget h2,
@@ -4685,7 +4781,7 @@ h1.page-title {
 }
 .widget a {
   color: var(--footer--color-link);
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-style: solid;
   text-decoration-color: currentColor;
 }
@@ -4696,32 +4792,12 @@ h1.page-title {
   color: var(--footer--color-link-hover);
   text-decoration-style: dotted;
 }
-.search-result-info {
-  text-align: center;
-}
-
-.search-pattern {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: red;
-}
-
-.search-pattern span {
-  color: black;
-}
-
-.search-box {
-  background-color: #f5efe0;
-  padding: 30px 0;
-}
 
 .search-form {
-  background-color: white;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
   max-width: var(--responsive--aligndefault-width);
-
 }
 .search-form > label {
   width: 100%;
@@ -4729,20 +4805,14 @@ h1.page-title {
   font-weight: var(--form--label-weight);
 }
 .search-form .search-field {
-  width: 99%;
-  padding: 6px;
-  line-height: 2rem;
-  margin: 0 1px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
+  max-width: inherit;
+  margin-top: calc(var(--global--spacing-vertical) / 3);
+  margin-right: calc(0.66 * var(--global--spacing-horizontal));
 }
 .search-form .search-submit {
-  font-size: 1rem;
-  line-height: 1rem;
-  color: white;
-  font-weight: normal;
-  padding: 12px;
-  border-radius: 6px;
-  background-color: #28a745;
+  margin-top: calc(var(--global--spacing-vertical) / 3);
+  margin-left: 10px;
 }
 
 .widget_search > .search-form .search-field {
@@ -4757,6 +4827,54 @@ h1.page-title {
 
 .widget_rss a.rsswidget .rss-widget-icon {
   display: none;
+}
+
+.widget-pages {
+  padding-left: 2rem;
+}
+
+.form-search .wp-block-search__label {
+  display: none;
+}
+.form-search .wp-block-search__input {
+  border: 1px solid var(--global--color-b2b2b2) !important;
+  border-radius: 5px;
+  color: var(--form--color-text);
+  max-width: inherit;
+  margin-right: 1rem;
+  height: 100% !important;
+}
+.form-search .wp-block-search__button {
+  border: 1px solid var(--global--color-b2b2b2) !important;
+  border-radius: 5px;
+  height: 100%;
+  background-color: var(--global--color-while);
+  font-size: var(--global--font-size-xs);
+  line-height: 70% !important;
+}
+
+.widget-pages {
+  padding-left: 2rem;
+}
+
+.form-search .wp-block-search__label {
+  display: none;
+}
+.form-search .wp-block-search__input {
+  border: 1px solid var(--global--color-b2b2b2) !important;
+  border-radius: 5px;
+  color: var(--form--color-text);
+  max-width: inherit;
+  margin-right: 1rem;
+  height: 100% !important;
+}
+.form-search .wp-block-search__button {
+  border: 1px solid var(--global--color-b2b2b2) !important;
+  border-radius: 5px;
+  height: 100%;
+  background-color: var(--global--color-while);
+  font-size: var(--global--font-size-xs);
+  line-height: 70% !important;
 }
 
 /* Category 07 is for any utility classes that are not assigned to a specific component. */
@@ -5094,78 +5212,4 @@ footer {
   min-width: auto;
 }
 
-/* Detail css */
-.title {
-  max-width: var(--responsive--aligndefault-width);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.headlinesdate {
-  font-size: 16px;
-  background: #f5ce31;
-  border-radius: 50%;
-  padding: 10px 16px;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
-}
-
-.headlinesdate .headlinesdm, .headlinesdate {
-  float: left;
-  font-family: 'Prata', serif;
-}
-
-.headlinesday {
-  border-bottom: 1px solid #000;
-}
-
-.headlinesdate .headlinesday, .headlines .headlinesmonth {
-  line-height: 1.7em;
-}
-
-.headlinesdate .headlinesyear {
-  line-height: 3.5em;
-  float: left;
-  margin-left: 3px;
-}
-
-.overviewline {
-  border-bottom: 1px solid #cecece;
-  margin: 25px 0 15px;
-  position: relative;
-}
-
-.overviewline:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50px;
-  border-width: 12px 12px 0;
-  border-style: solid;
-  border-color: #cecece transparent;
-  display: block;
-  width: 0;
-}
-
-.overviewline:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 51px;
-  border-width: 11px 11px 0;
-  border-style: solid;
-  border-color: #f5f5f5 transparent;
-  display: block;
-  width: 0;
-}
-
 /*# sourceMappingURL=style.css.map */
-.form-control-borderless {
-  border: none;
-}
-
-.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
-  border: none;
-  outline: none;
-  box-shadow: none;
-}
-

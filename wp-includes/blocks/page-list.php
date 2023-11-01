@@ -187,19 +187,33 @@ function block_core_page_list_render_nested_page_list( $open_submenus_on_click, 
 		}
 
 		$title      = wp_kses_post( $page['title'] );
+		$page_id = wp_kses_post( $page['page_id'] );
+		$thumbnail_image      = wp_get_attachment_image_src( get_post_thumbnail_id( $page_id ));
+		$thumbnail_content      = get_the_excerpt(  $page_id );
+		// var_dump( $thumbnail_content );
+		
 		$aria_label = sprintf(
 			/* translators: Accessibility text. %s: Parent page title. */
 			__( '%s submenu' ),
 			wp_strip_all_tags( $title )
 		);
 
-		$markup .= '<li class="wp-block-pages-list__item' . esc_attr( $css_class ) . '"' . $style_attribute . '>';
+		$markup .= '<div class="row wp-block-pages-list__item' . esc_attr( $css_class ) . '"' . $style_attribute . '>';
 
 		if ( isset( $page['children'] ) && $is_navigation_child && $open_submenus_on_click ) {
 			$markup .= '<button aria-label="' . esc_attr( $aria_label ) . '" class="' . esc_attr( $navigation_child_content_class ) . ' wp-block-navigation-submenu__toggle" aria-expanded="false">' . esc_html( $title ) .
 			'</button><span class="wp-block-page-list__submenu-icon wp-block-navigation__submenu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></span>';
 		} else {
-			$markup .= '<a class="wp-block-pages-list__item__link' . esc_attr( $navigation_child_content_class ) . '" href="' . esc_url( $page['link'] ) . '"' . $aria_current . '>' . $title . '</a>';
+			$markup .= '
+			
+				<div class="wpb_wrapper">
+					<a class="wp-block-pages-list__item__link' . esc_attr( $navigation_child_content_class ) . '" href="' . esc_url( $page['link'] ) . '"' . $aria_current . '>' . $title . '</a>
+					<div class="page_image">'. '<img src="' . $thumbnail_image[0] . '" alt="'. $title .'" />' .'</div>
+					<div class="page_content"><p> '. $thumbnail_content .'</p></div>
+				</div>
+					
+			';
+			
 		}
 
 		if ( isset( $page['children'] ) ) {
@@ -212,7 +226,7 @@ function block_core_page_list_render_nested_page_list( $open_submenus_on_click, 
 			$markup .= block_core_page_list_render_nested_page_list( $open_submenus_on_click, $show_submenu_icons, $is_navigation_child, $page['children'], $is_nested, $active_page_ancestor_ids, $colors, $depth + 1 );
 			$markup .= '</ul>';
 		}
-		$markup .= '</li>';
+		$markup .= '</div>';
 	}
 	return $markup;
 }
